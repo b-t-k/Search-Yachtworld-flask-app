@@ -104,7 +104,9 @@ def echo():
 		urllist=[bc,wash,oreg]
 
 		# set path to export as file
-		path_folder="output/"
+		dirname = os.path.dirname(__file__)
+		path_folder = os.path.join(dirname, "output/")
+		print (path_folder)
 
 		# set date and time
 		now = datetime.now()
@@ -181,7 +183,7 @@ def echo():
 			#dump two lists with dict names and add formatting (default=str solves date issue)
 			json.dump({'fileinfo': arraypreface, 'boats': arrayjson}, outfile, indent=4, default=str)
 	data = []
-	with open("output/boatlist.json", "r") as jdata:
+	with open(path_folder+"boatlist.json", "r") as jdata:
 		data = json.load(jdata)
 		data['boats'].sort(key=keyparam)
 	return render_template('results.html', boatlist=data['boats'],predata=data['fileinfo'])
