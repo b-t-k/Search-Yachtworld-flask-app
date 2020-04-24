@@ -1,0 +1,4 @@
+
+*.json
+*.pyc
+output/boatlist.json
