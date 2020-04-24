@@ -1,0 +1,85 @@
+/* Style the body and outer container */
+
+.wrapper{
+	width: 800px;
+	margin: 0 auto;
+}
+
+.wrapperform{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.wrapperindex{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.page-header h2{
+	margin-top: 0;
+}
+
+table tr td:last-child a{
+	margin-right: 15px;
+}
+
+.pull-right {
+	margin-right: 5px;
+}
+
+ul .tab {
+	list-style-type: none;
+}
+
+p + ul {
+	margin-top: -10px;
+}
+
+/* button size */
+.fixedsize {
+	width: 150px;
+}
+
+.first-column {
+}
+.second-column {
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	padding: 15px;
+}
+
+.second-column img {
+	padding-bottom: 15px;
+}
+
+.small {
+	font-size: 40%;
+	width: 200px;
+}
+
+.btn-orange {
+	background-color: #f15b25;
+	color: #fff;
+	padding:10px;
+
+	}
+
+.btn-orange:hover {
+	color: #FFFFFF !important;
+	background: #CF6044;
+	text-decoration: none;
+}
+
+.orange {
+	color: #f15b25;
+	}
+
+
+
+.btn-orange.active {
+	color: #fff;
+	border-color: #ccc;
+}
+
+.box-shadow--4dp {
+	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+}

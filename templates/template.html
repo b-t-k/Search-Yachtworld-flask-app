@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Flask Parent Template</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js">
+	</script>
+</head>
+<body>
+	<div class="wrapperindex">
+		<div class="container-fluid ">
+			<div class="page-header clearfix">
+
+				<div class=" navbar ">
+				<img src="static\images\artboard.png" height="100">
+					<a href="{{ url_for('results') }}" {% if active_page == "results"  %} class="btn btn-orange active fixedsize pull-right"{% endif %} class="btn btn-orange fixedsize pull-right box-shadow--4dp" >Results</a>
+					<a href="{{ url_for('home') }}" {% if active_page == "index" %} class="btn btn-orange active fixedsize pull-right"{% endif %} class="btn btn-orange fixedsize pull-right box-shadow--4dp" >Search</a>
+				</div>
+			</div>
+
+			{% block content %}
+			{% endblock %}
+
+		</div>
+	</div>
+</body>
+</html>

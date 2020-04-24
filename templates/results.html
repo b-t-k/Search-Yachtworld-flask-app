@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Yachtworld Results</title>
+	</head>
+
+<body>
+	{% extends "template.html" %}
+	{% set active_page = "results" %}
+	{% block content %}
+		<div class="page-header">
+			<h2 class="orange">YachtWorld Results</h2>
+			<div id="preface">
+				{% for pb in predata %}
+				<div>
+					<p>{{pb.Text}}<br/>Updated: {{pb.Date}}
+					<br/><a href="{{pb.Creator}}">created by {{pb.Creator}}</a></p>
+					<p>Price range : <strong>${{pb.Low}} </strong> and <strong>${{pb.High}}</strong> (${{pb.Currency}})<br/>
+					Boat length: <strong>{{pb.Short}}'</strong> – <strong>{{pb.Long}}'</strong></p>
+				</div>
+				{% endfor %}
+		</div>
+	{% for boat in boatlist %}
+		<div class="col-xs-6" style="min-height:170px;">
+			<div class="col-md-5 text-right ">
+				<img src="{{boat.Thumb}}" alt="" width="150px">
+			</div>
+			<div class="col-md-7">
+				<h3><a href="{{boat.URL}}">{{boat.Name}}</a></h3>
+				<p><strong>${{boat.Price}} </strong> / {{boat.Size}}</br>
+				{{boat.Location}}</p>
+			</div>
+		</div>
+	{% endfor %}
+
+	{% endblock %}
+</body>
+</html>
+

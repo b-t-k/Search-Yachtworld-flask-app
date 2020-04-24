@@ -1,0 +1,128 @@
+{
+    "fileinfo": [
+        {
+            "Date": "April 09, 2020 11:14",
+            "Text": "Results are a Yachtworld search of sailboats in Washington, Oregon and B.C.",
+            "Currency": "CAD",
+            "Low": "600000",
+            "High": "1200000",
+            "Short": "34",
+            "Long": "48",
+            "Creator": "http://neverforever.ca"
+        }
+    ],
+    "boats": [
+        {
+            "URL": "https://www.yachtworld.com/boats/2020/lagoon-46-3490119/",
+            "Name": "Lagoon 46",
+            "Price": "Call for Price",
+            "Size": "46 ft / 2020",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/75/79/6927579_20181204131633506_1_LARGE.jpg?f=/1/75/79/6927579_20181204131633506_1_LARGE.jpg&w=520&h=346&t=1543958481"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2021/lagoon-42-3012449/",
+            "Name": "Lagoon 42",
+            "Price": "Call for Price",
+            "Size": "42 ft / 2021",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/5/91/5950591_20160926163747406_1_LARGE.jpg?f=/1/5/91/5950591_20160926163747406_1_LARGE.jpg&w=520&h=346&t=1474933076"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2010/chris-white-designs-atlantic-48-3115967/",
+            "Name": "Chris White Designs ATLANTIC 48",
+            "Price": "789,969",
+            "Size": "48 ft / 2010",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/68/19/6316819_20170729095924386_1_LARGE.jpg?f=/1/68/19/6316819_20170729095924386_1_LARGE.jpg&w=520&h=346&t=1502035763"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2013/chris-white-designs-atlantic-47-3012878/",
+            "Name": "Chris White Designs Atlantic 47",
+            "Price": "908,814",
+            "Size": "47 ft / 2013",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/16/39/5951639_20160927131404750_1_LARGE.jpg?f=/1/16/39/5951639_20160927131404750_1_LARGE.jpg&w=520&h=346&t=1477156939"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2020/tartan-4700-3167689/",
+            "Name": "Tartan 4700",
+            "Price": "Call for Price",
+            "Size": "47 ft / 2020",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/23/0/3742300_20120405081914_5_LARGE.jpg?f=/1/23/0/3742300_20120405081914_5_LARGE.jpg&w=520&h=346&t=1515712755"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2019/beneteau-america-46-1-3218543/",
+            "Name": "Beneteau America 46.1",
+            "Price": "Call for Price",
+            "Size": "46 ft / 2019",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/29/90/6742990_20190903144632795_1_LARGE.jpg?f=/1/29/90/6742990_20190903144632795_1_LARGE.jpg&w=520&h=346&t=1567547497"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2015/garcia-exploration-45-3592549/",
+            "Name": "Garcia Exploration 45",
+            "Price": "767,598",
+            "Size": "45 ft / 2015",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/29/7/7232907_20191001103957530_1_LARGE.jpg?f=/1/29/7/7232907_20191001103957530_1_LARGE.jpg&w=520&h=346&t=1569953703"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2011/bestevaer-45st-3132559/",
+            "Name": "Bestevaer 45ST",
+            "Price": "697,689",
+            "Size": "45 ft / 2011",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/20/97/6372097_20190809090010500_1_LARGE.jpg?f=/1/20/97/6372097_20190809090010500_1_LARGE.jpg&w=520&h=346&t=1565366761"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2019/jeanneau-sun-odyssey-440-3519781/",
+            "Name": "Jeanneau Sun Odyssey 440",
+            "Price": "609,583",
+            "Size": "44 ft / 2019",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/79/59/7017959_20190426141830189_1_LARGE.jpg?f=/1/79/59/7017959_20190426141830189_1_LARGE.jpg&w=520&h=346&t=1556313528"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2020/tartan-4300-3167690/",
+            "Name": "Tartan 4300",
+            "Price": "Call for Price",
+            "Size": "43 ft / 2020",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/22/86/3742286_20120405075403_10_LARGE.jpg?f=/1/22/86/3742286_20120405075403_10_LARGE.jpg&w=520&h=346&t=1515712620"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2021/lagoon-42-3012746/",
+            "Name": "Lagoon 42",
+            "Price": "914,865",
+            "Size": "42 ft / 2021",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/14/18/5951418_20160927112627865_1_LARGE.jpg?f=/1/14/18/5951418_20160927112627865_1_LARGE.jpg&w=520&h=346&t=1475000877"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2021/lagoon-42-3471005/",
+            "Name": "Lagoon 42",
+            "Price": "914,865",
+            "Size": "42 ft / 2021",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/14/18/5951418_20160927112627865_1_LARGE.jpg?f=/1/14/18/5951418_20160927112627865_1_LARGE.jpg&w=520&h=346&t=1539904246"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2019/lagoon-40-3197638/",
+            "Name": "Lagoon 40",
+            "Price": "796,756",
+            "Size": "40 ft / 2019",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/86/30/6368630_20180409152857612_1_LARGE.jpg?f=/1/86/30/6368630_20180409152857612_1_LARGE.jpg&w=520&h=346&t=1523312977"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2020/fountaine-pajot-lucia-40-3214997/",
+            "Name": "Fountaine Pajot Lucia 40",
+            "Price": "740,893",
+            "Size": "40 ft / 2020",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/10/7/6731007_20190221152907663_1_LARGE.jpg?f=/1/10/7/6731007_20190221152907663_1_LARGE.jpg&w=520&h=346&t=1550868203"
+        }
+    ]
+}

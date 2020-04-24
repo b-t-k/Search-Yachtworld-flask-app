@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>YachtWorld Combined Results</title>
+	</head>
+<body>
+
+	{% extends "template.html" %}
+	{% set active_page = "index" %}
+	{% block content %}
+
+	<div class="page-header">
+		<h2 class="orange">YachtWorld Combined Search</h2>
+		<p>This page searches Washington, Oregon and British Columbia for sailboats on Yachtworld and returns the results.</p>
+	</div>
+	<form action="/" method="POST">
+	<div class="form-group col-md-2">
+	<label>Currency Type</label>
+		<div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="inputcurr1" name="inputcurr" value="CAD" checked> <label class="form-check-label" for="inputcurr">CAD</label>
+		</div>
+		<div class="form-check form-check-inline"><input class="form-check-input" type="radio" id="inputcurr2" name="inputcurr" value="USD"> <label class="form-check-label" for="inputcurr2">USD</label>
+		</div>
+	</div>
+<div  class="form-group col-md-10">
+	<div class="form-group col-md-6">
+	<label>Min Price</label>
+		$<input type="text" class="form-control" id="minprice" name="minprice" placeholder="(default = 30000)">
+	</div>
+	<div class="form-group col-md-6">
+	<label>Max Price</label>
+		$<input type="text" class="form-control" id="maxprice" name="maxprice" placeholder="(default = 120000)">
+	</div>
+	<div class="form-group col-md-6">
+	<label>Min Length (ft.)</label>
+		<input type="text" class="form-control" id="minlength" name="minlength" placeholder="Minimum length (default = 34)">
+	</div>
+	<div class="form-group col-md-6">
+	<label>Max Length (ft.)</label>
+		<input type="text" class="form-control" id="maxlength" name="maxlength" placeholder="Maximum length (default = 48)">
+	</div>
+	<div class="form-group col-md-6">
+	<label>Sort Parameters</label>
+		<div class="form-check form-check-inline">
+			<label  class="radio-inline">
+			<input class="form-check-input" type="radio" id="inputsize" name="inputsearch" value="Size" checked>
+			Length</label>
+			<label  class="radio-inline">
+			<input class="form-check-input" type="radio" id="inputprice" name="inputsearch" value="Price">
+			Price</label>
+			<label  class="radio-inline">
+			<input class="form-check-input" type="radio" id="inputlocation" name="inputsearch" value="Location">
+			Location</label>
+		</div>
+	</div>
+</div>
+	<div class="form-group col-md-12">
+		<input class="btn btn-orange pull-left" type="submit" value="Begin Search">
+	</div>
+	</form>
+
+	{% endblock %}
+
+</body>
+</html>
+
