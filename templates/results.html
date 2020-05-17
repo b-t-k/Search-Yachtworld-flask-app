@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Yachtworld Results</title>
+		<title>Sailboat Search Results</title>
 	</head>
 
 <body>
 	{% extends "template.html" %}
 	{% set active_page = "results" %}
 	{% block content %}
-		<div class="page-header">
-			<h2 class="orange">YachtWorld Results</h2>
+		<div class="subhead">
+			<h2 class="orange">Sailboat Search Results</h2>
 			<div id="preface">
 				{% for pb in predata %}
 				<div>
-					<p>{{pb.Text}}<br/>Updated: {{pb.Date}}
+					<p>{{pb.Text}}{{pb.Listing}}<br/>Updated: {{pb.Date}}
 					<br/><a href="{{pb.Creator}}">created by {{pb.Creator}}</a></p>
 					<p>Price range : <strong>${{pb.Low}} </strong> and <strong>${{pb.High}}</strong> (${{pb.Currency}})<br/>
 					Boat length: <strong>{{pb.Short}}'</strong> – <strong>{{pb.Long}}'</strong></p>
+					<p>Total Boats found: {{pb.Boatcount}}</p>
 				</div>
 				{% endfor %}
 		</div>
@@ -28,7 +29,8 @@
 			<div class="col-md-7">
 				<h3><a href="{{boat.URL}}">{{boat.Name}}</a></h3>
 				<p><strong>${{boat.Price}} </strong> / {{boat.Size}}</br>
-				{{boat.Location}}</p>
+				{{boat.Location}}</br>
+				<span class="small">{{boat.Listing}}—{{boat.Listdate}}</span></p>
 			</div>
 		</div>
 	{% endfor %}

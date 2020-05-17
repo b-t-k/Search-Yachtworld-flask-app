@@ -15,9 +15,37 @@
 	margin: 0 auto;
 }
 
-.page-header h2{
-	margin-top: 0;
+.page-header {
+	padding: 10px 0 0px;
+	display: flex;
+	align-items: center;
 }
+
+.page-header h2 {
+	color: #f15b25;
+	margin: 0px 0px 10px 0px;
+}
+
+.col-md-7 h3 {
+	margin-top:0px !important;
+}
+
+.pagefooter {
+	padding: 10px 0 10px 0;
+}
+
+.pagefooter p {
+	font-size: 75%;
+}
+
+.subhead p {
+	margin-bottom: 20px;
+}
+
+.globalmenubar {
+	margin-top:20px;
+	margin-left: auto;
+	}
 
 table tr td:last-child a{
 	margin-right: 15px;
@@ -56,11 +84,15 @@ p + ul {
 	width: 200px;
 }
 
+.btn {
+	border-radius: 0 !important;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 .btn-orange {
 	background-color: #f15b25;
 	color: #fff;
 	padding:10px;
-
 	}
 
 .btn-orange:hover {
@@ -73,13 +105,8 @@ p + ul {
 	color: #f15b25;
 	}
 
-
-
 .btn-orange.active {
 	color: #fff;
 	border-color: #ccc;
 }
 
-.box-shadow--4dp {
-	box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
-}
