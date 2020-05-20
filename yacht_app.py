@@ -81,24 +81,15 @@ def echo():
 
 		# input high number & convert currency
 		exchange = 1.4
-		if sitename == "SBL":
-			if curr == 'CAD':
-				if maxprice == '':
-					maxpricenum = 120000 / exchange
-					maxpricenum = str(math.trunc(maxpricenum))
-				else:
-					maxpricenum = float(maxprice) / exchange
-					maxpricenum = str(math.trunc(maxpricenum))
-			else:
-				if maxprice == '':
-					maxpricenum = '120000'
-				else:
-					maxpricenum = maxprice
+		if maxprice == '':
+			maxpricenum = '120000'
+			maxprice = maxpricenum
 		else:
-			if maxprice == '':
-				maxpricenum = '120000'
-			else:
-				maxpricenum = maxprice
+			maxpricenum = maxprice
+		if sitename == "SBL":
+			if curr == "CAD":
+				maxpricenum = int(maxpricenum) / exchange
+				maxpricenum = str(math.trunc(maxpricenum))
 		#print(maxpricenum)
 
 		# input low length
@@ -125,9 +116,10 @@ def echo():
 			van = '&city=vancouver'
 			british = '&city=british%20columbia'
 			wash = '&state=Washington'
+			oreg = '&state=Oregon'
 
 			# create list of region url variables
-			urllist=[bc,van,british,wash]
+			urllist=[bc,van,british,wash,oreg]
 
 		elif sitename == "YW":
 			pricerange = '&price=' + minpricenum + '-' + maxpricenum
@@ -356,7 +348,7 @@ def echo():
 					'Boatcount': boatcount,
 					'Currency': curr,
 					'Low': minpricenum,
-					'High': maxpricenum,
+					'High': maxprice,
 					'Short':lowlen,
 					'Long': highlen,
 					'Creator': 'http://neverforever.ca'

@@ -13,9 +13,9 @@
 			<div id="preface">
 				{% for pb in predata %}
 				<div>
-					<p>{{pb.Text}}{{pb.Listing}}<br/>Updated: {{pb.Date}}
+					<p>{{pb.Text}}<strong>{{pb.Listing}}</strong><br/>Updated: {{pb.Date}}
 					<br/><a href="{{pb.Creator}}">created by {{pb.Creator}}</a></p>
-					<p>Price range : <strong>${{pb.Low}} </strong> and <strong>${{pb.High}}</strong> (${{pb.Currency}})<br/>
+					<p>Price range : <strong>${{pb.Low}} </strong> and <strong>${{pb.High}}</strong> ({{pb.Currency}})<br/>
 					Boat length: <strong>{{pb.Short}}'</strong> – <strong>{{pb.Long}}'</strong></p>
 					<p>Total Boats found: {{pb.Boatcount}}</p>
 				</div>
