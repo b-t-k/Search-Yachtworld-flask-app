@@ -1,4 +1,4 @@
-# Search-Yachtworld-flask-app
+# Search-boatlisting-flask-app
 A way to search for boats in the PNW using the Yachtworld website.
 
 ## Why
@@ -6,12 +6,12 @@ As of their last update (late 2019) [YachtWorld.com](https://yachtworld.com), wh
 It also occurred to me that [sailboatlistings.com](https://sailboatlistings.com) is also a popular venue for selling boats and also has a variety of boats not found on Yachtworld.
 The latest version of this flask app scrapes the Yachtworld website as well as the Sailboatlistings site and returns desired results on a local web page with links back to the original listing.
 
-## What 
-Currently this app searches Yachtworld for BC, Washington and Oregon. Since the Sailboalistings site is set up badly for non U.S. boats, on that it searches for a combination of BC, British Columbia, Vancouver and Washington.
-The results are output to /output/boatlist.json and that file can be saved for other uses by copying it out of the folder.
+## What
+Currently this app searches Yachtworld for BC, Washington and Oregon. Since the Sailboalistings site is set up badly for non U.S. boats, on that it searches for a combination of BC, British Columbia, Vancouver, Washington and Oregon.
+The results are displayed with links back to the originating site and also output to /output/boatlist.json and that file can be saved for other uses by copying it out of the folder.
 
 ## Deployment
-Download and run: $ FLASK_APP=/Search-Yachtworld-flask-app/yacht_app flask run  --port 5000 --host=0.0.0.0
+Download and run: $ FLASK_APP=/Search-boatlisting-flask-app/yacht_app flask run  --port 5000 --host=0.0.0.0
 The app will run in the background (on OSX, you will need to keep the terminal window open as long as you are running the app. Type Ctrl-c to quit). Results can be found at [http://localhost:5000](http://localhost:5000).
 #### Dependencies
 Obviously python and flask must be installed on your computer for this to run. You will also need to install the BeautifulSoup4 and Requests packages.
@@ -21,11 +21,10 @@ Obviously python and flask must be installed on your computer for this to run. Y
 ## Variables
 The search is made based on price (minpricenum, maxpricenum), length (lowlen, highlen), currency (currency) and regions. It loops through each region and writes the results to a json file then appends the results from the next iteration of the loop.
 These variables can be adjusted to suit your needs.
-* Sailboat listing doesn't accept a minimum price variable
+* Note: Sailboatlistings doesn't accept a minimum price variable
 #### *Set Regions* Sailboatlistings
 * The list of city & state variables (line 120) can be modified or deleted.
-* Be sure to also add the variables to the urllist[] array
- (line 126)
+* Be sure to also add the variables to the urllist[] array (line 126)
 #### *Set Regions* Yachtworld
 * The base url for Yachtworld (line 62) is set to 'https://www.yachtworld.com/boats-for-sale/type-sail/region-northamerica/'. Areas out of North America will need to reset this.
 * you can add regions using the url parameter from the original site
