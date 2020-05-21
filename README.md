@@ -20,6 +20,7 @@ Obviously python and flask must be installed on your computer for this to run. Y
 
 ## Variables
 The search is made based on price (minpricenum, maxpricenum), length (lowlen, highlen), currency (currency) and regions. It loops through each region and writes the results to a json file then appends the results from the next iteration of the loop.
+There is also a "best before" date for the sailboatlistings as this site often suffers from outdated listings. It is currently set to  January 1, 2018 (bestbefore = datetime(2018, 1, 1)) (~line 223).
 These variables can be adjusted to suit your needs.
 * Note: Sailboatlistings doesn't accept a minimum price variable
 #### *Set Regions* Sailboatlistings
