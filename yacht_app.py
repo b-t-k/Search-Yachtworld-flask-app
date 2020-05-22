@@ -267,6 +267,8 @@ def echo():
 					#increment pagenumber
 					pagenum = pagenum + 1
 
+#START LOOP 2
+
 			elif sitename == "YW":
 
 				# find string with page count in Yachtworld
@@ -301,41 +303,46 @@ def echo():
 
 					#loop though listing and append to list
 					for listname in boatlisting:
-						nameurl = listname['href']
-						thumb = listname.find("meta",  property="image")
-						#add https and find content of meta and substring url to remove first two characters
-						thumburl="https://" + thumb["content"][2:]
-						name = listname.find('div', property="name")
-						priceraw = listname.find('div', class_="price")
-						if priceraw.text != "Call for Price":
-							#remove extra info from front and back
-							price = re.search("\$.*? (?= *)",priceraw.text)
-							cost = price.group()[1:-1]
-						else:
-							cost="Call for Price"
-						sizeyear = listname.find('div', class_="listing-card-length-year")
-						sizeyear = sizeyear.text
-						location = listname.find('div', class_="listing-card-location")
-						location = location.text
 
-						#write to json format
-						writejson =  {
-								"URL": nameurl,
-								"Name": name.text,
-								"Price": cost,
-								"Size": sizeyear,
-								"Location":location,
-								"Thumb": thumburl,
-								"Listing": listsite
-							}
-						#increment boat count
-						boatcount = boatcount + 1
+						if listname['data-reporting-click-listing-type'] != "YW Premium":
 
-						# append to list
-						arrayjson.append(writejson)
+							nameurl = listname['href']
+							thumb = listname.find("meta",  property="image")
+							#add https and find content of meta and substring url to remove first two characters
+							thumburl="https://" + thumb["content"][2:]
+							name = listname.find('div', property="name")
+							priceraw = listname.find('div', class_="price")
+							if priceraw.text != "Call for Price":
+								#remove extra info from front and back
+								price = re.search("\$.*? (?= *)",priceraw.text)
+								cost = price.group()[1:-1]
+							else:
+								cost="Call for Price"
+							sizeyear = listname.find('div', class_="listing-card-length-year")
+							sizeyear = sizeyear.text
+							location = listname.find('div', class_="listing-card-location")
+							location = location.text
+
+							#write to json format
+							writejson =  {
+									"URL": nameurl,
+									"Name": name.text,
+									"Price": cost,
+									"Size": sizeyear,
+									"Location":location,
+									"Thumb": thumburl,
+									"Listing": listsite
+								}
+							#increment boat count
+							boatcount = boatcount + 1
+
+							# append to list
+							arrayjson.append(writejson)
 
 					#increment pagenumber
 					pagenum = pagenum + 1
+
+# END LOOP 2
 
 		#add Preface list (array)
 		arraypreface = []
