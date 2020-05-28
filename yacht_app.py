@@ -21,6 +21,10 @@ def results():
 		data = json.load(jdata)
 	return render_template("results.html", boatlist=data['boats'],predata=data['fileinfo'])
 
+@app.route('/output/<path:filename>', methods=['GET'])
+def download(filename):
+	return send_from_directory(os.path.join(app.root_path, 'output'),filename=filename)
+
 @app.route("/", methods=['POST'])
 def echo():
 	#get index form data
@@ -54,45 +58,12 @@ def echo():
 		from datetime import datetime
 		import os
 
-		# set header to avoid being labeled a bot
-		headers = {
-			'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
-		}
-
-		# set base url &  list site
-		if sitename == "SBL":
-			baseurl='https://www.sailboatlistings.com/cgi-bin/saildata/db.cgi?db=default&uid=default&websearch=1&view_records=1&sb=date&so=descend'
-			listsite= "Sailboatlisting.com"
-		elif sitename == "YW":
-			baseurl='https://www.yachtworld.com/boats-for-sale/type-sail/region-northamerica/'
-			listsite= "Yachtworld.com"
-
 		# input currency
 		curr = inputcurr
 		#print(curr)
 
-		# input low number
-		if sitename == "SBL":
-			minpricenum ='0'
-		else:
-			if minprice == '':
-				minpricenum = '30000'
-			else:
-				minpricenum = minprice
-		#print(minpricenum)
-
-		# input high number & convert currency
+		#set Exchange Rate
 		exchange = 1.4
-		if maxprice == '':
-			maxpricenum = '120000'
-			maxprice = maxpricenum
-		else:
-			maxpricenum = maxprice
-		if sitename == "SBL":
-			if curr == "CAD":
-				maxpricenum = int(maxpricenum) / exchange
-				maxpricenum = str(math.trunc(maxpricenum))
-		#print(maxpricenum)
 
 		# input low length
 		if minlength == '':
@@ -108,8 +79,35 @@ def echo():
 			highlen = maxlength
 		#print(highlen)
 
-		# set variables
-		if sitename == "SBL":
+		# set header to avoid being labeled a bot
+		headers = {
+			'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+		}
+
+		#start sailboatlisting_loop
+		def sailboatlisting_loop():
+
+			echo.boatcount = 0
+
+			# set base url &  list site
+			baseurl='https://www.sailboatlistings.com/cgi-bin/saildata/db.cgi?db=default&uid=default&websearch=1&view_records=1&sb=date&so=descend'
+			echo.listsite = 'Sailboatlisting.com'
+
+			#set low number
+			echo.minpricenum ='0'
+
+			#set high price
+			maxprice=''
+			if maxprice == '':
+				maxpricenum = '120000'
+				maxprice = maxpricenum
+			else:
+				maxpricenum = maxprice
+
+			if curr == "CAD":
+				maxpricenum = int(maxpricenum) / exchange
+				maxpricenum = str(math.trunc(maxpricenum))
+
 			pricerange = '&price-lt=' + maxpricenum
 			boatlength = '&length-gt=' + lowlen + '&length-lt=' + highlen
 
@@ -123,53 +121,22 @@ def echo():
 			# create list of region url variables
 			urllist=[bc,van,british,wash,oreg]
 
-		elif sitename == "YW":
-			pricerange = '&price=' + minpricenum + '-' + maxpricenum
-			currlen = '?currency=' + curr + '&length=' + lowlen + '-' + highlen
 
-			# set regions
-			wash = 'country-united-states/state-washington/'
-			oreg = 'country-united-states/state-oregon/'
-			bc = 'country-canada/province-british-columbia/'
-
-			# create list of region url variables
-			urllist=[bc,wash,oreg]
-
-		# set path to export as file
-		dirname = os.path.dirname(__file__)
-		path_folder = os.path.join(dirname, "output/")
-		#print (path_folder)
-
-		boatcount = 0
-
-		# set date and time
-		now = datetime.now()
-		dt_string = now.strftime("%B %d, %Y %H:%M")
-
-		# create empty list
-		arrayjson = []
-		urljson =[]
-		#loop though pages in urllist
-		for page in urllist:
-		# get url
-			if sitename == "SBL":
+			#loop though pages in urllist
+			for page in urllist:
+				#set urlpath
 				urlpath = baseurl+boatlength+pricerange+page
-				#print(urlpath)
-			elif sitename == "YW":
-				urlpath = baseurl+page+currlen+pricerange
+				print(urlpath)
+				urljson.append(urlpath)
 
-			urljson.append(urlpath)
+				page = requests.get(urlpath, timeout=5)
+				boatpg = BeautifulSoup(page.content, "html.parser")
 
+				# find errors by comparing requested url from listed url
+				alert = page
+				if page.url != urlpath:
+					continue
 
-			page = requests.get(urlpath, timeout=5)
-			boatpg = BeautifulSoup(page.content, "html.parser")
-
-			# find errors by comparing requested url from listed url
-			alert = page
-			if page.url != urlpath:
-				continue
-
-			if sitename == "SBL":
 				# find string with item count in Sailboatlisting
 				pagecountpattern = re.search('(?<=Your search returned )(\d{1,3}) matches.',boatpg.text)
 				#print(pagecountpattern.group(1))
@@ -186,16 +153,14 @@ def echo():
 				# set first page
 				pagenum = 1
 
+				#Loop Pages
 				while pagecount >= pagenum:
-					#print (pagecount)
-					#print (pagenum)
 
+					#set current page
 					currpagehtml = urlpath+'&nh=' + str(pagenum)
 					page = requests.get(currpagehtml, timeout=5)
 					boatpg = BeautifulSoup(page.content, "html.parser")
 					#print (currpagehtml)
-
-#LOOP
 
 					boatlist = boatpg.find_all('table', attrs={'width':'728'})
 
@@ -226,6 +191,8 @@ def echo():
 						if datedate < bestbefore:
 							continue
 
+						datedate = datedate.strftime('%d-%b-%Y')
+
 						#find table above td with span that contains details
 						table=listname.find('span', class_="sailvb").parent.parent.parent
 
@@ -250,28 +217,75 @@ def echo():
 
 						#write to json format
 						writejson =  {
-								"URL": nameurl,
 								"Name": name.text,
 								"Price": cost,
 								"Size": sizeyear,
 								"Location":location,
+								"URL": nameurl,
 								"Thumb": thumburl,
-								"Listing": listsite,
+								"Listing": echo.listsite,
 								"Listdate": datedate
 							}
 						#increment boat count
-						boatcount = boatcount + 1
+						echo.boatcount = echo.boatcount + 1
+
 						# append to list
 						arrayjson.append(writejson)
-
-#END LOOP
 
 					#increment pagenumber
 					pagenum = pagenum + 1
 
-#START LOOP 2
+		#end sailboatlisting_loop
 
-			elif sitename == "YW":
+
+		#Start yachtworld_loop()
+		def yachtword_loop(minprice, maxprice):
+			echo.boatcount = 0
+
+			# set base url &  list site
+			baseurl='https://www.yachtworld.com/boats-for-sale/type-sail/region-northamerica/'
+			echo.listsite= 'Yachtworld.com'
+
+			#set low price
+			if minprice == '':
+				echo.minpricenum = '30000'
+			else:
+				echo.minpricenum = minprice
+			#print(echo.minpricenum)
+
+			#set high price
+			if maxprice == '':
+				maxpricenum = '120000'
+				maxprice = maxpricenum
+			else:
+				maxpricenum = maxprice
+
+			pricerange = '&price=' + echo.minpricenum + '-' + maxpricenum
+			currlen = '?currency=' + curr + '&length=' + lowlen + '-' + highlen
+
+			# set regions
+			wash = 'country-united-states/state-washington/'
+			oreg = 'country-united-states/state-oregon/'
+			bc = 'country-canada/province-british-columbia/'
+
+			# create list of region url variables
+			urllist=[bc,wash,oreg]
+
+			#loop though pages in urllist
+			for page in urllist:
+
+				#set urlpath
+				urlpath = baseurl+page+currlen+pricerange
+				print(urlpath)
+				urljson.append(urlpath)
+
+				page = requests.get(urlpath, timeout=5)
+				boatpg = BeautifulSoup(page.content, "html.parser")
+
+				# find errors by comparing requested url from listed url
+				alert = page
+				if page.url != urlpath:
+					continue
 
 				# find string with page count in Yachtworld
 				pagecountstring=boatpg.find('div', class_="page-selector-text")
@@ -289,8 +303,8 @@ def echo():
 
 				# Loop through pages
 				while pagecount >= pagenum:
-#					print (pagecount)
-#					print (pagenum)
+		#					print (pagecount)
+		#					print (pagenum)
 
 					currpagehtml = urlpath+'&page=' + str(pagenum)
 					page = requests.get(currpagehtml, timeout=5)
@@ -327,16 +341,17 @@ def echo():
 
 							#write to json format
 							writejson =  {
-									"URL": nameurl,
 									"Name": name.text,
 									"Price": cost,
 									"Size": sizeyear,
 									"Location":location,
+									"URL": nameurl,
 									"Thumb": thumburl,
-									"Listing": listsite
+									"Listing": echo.listsite,
+								"Listdate": ''
 								}
 							#increment boat count
-							boatcount = boatcount + 1
+							echo.boatcount = echo.boatcount + 1
 
 							# append to list
 							arrayjson.append(writejson)
@@ -344,19 +359,46 @@ def echo():
 					#increment pagenumber
 					pagenum = pagenum + 1
 
-# END LOOP 2
+		# End yachtworld_loop()
+
+
+#Start Process
+
+		# set path to export as file
+		dirname = os.path.dirname(__file__)
+		path_folder = os.path.join(dirname, "output/")
+		#print (path_folder)
+
+		# set date and time
+		now = datetime.now()
+		dt_string = now.strftime("%B %d, %Y %H:%M")
+
+		# create empty list
+		arrayjson = []
+		urljson =[]
+
+#CALL THE TWO FUNCTIONS!!!!!
+		if sitename == "SBL":
+			sailboatlisting_loop()
+		elif sitename == "YW":
+			yachtword_loop(minprice, maxprice)
+		elif sitename == "both":
+			sailboatlisting_loop()
+			yachtword_loop(minprice, maxprice)
+			echo.listsite = 'Yachtworld & Sailboatlisting'
 
 		#add Preface list (array)
 		arraypreface = []
+
 
 		preface = {
 					'Date': dt_string,
 					'urllisting': urljson,
 					'Text': 'Results are a search of sailboats in Washington, Oregon and B.C. from ',
-					"Listing": listsite,
-					'Boatcount': boatcount,
+					"Listing": echo.listsite,
+					'Boatcount': echo.boatcount,
 					'Currency': curr,
-					'Low': minpricenum,
+					'Low': echo.minpricenum,
 					'High': maxprice,
 					'Short':lowlen,
 					'Long': highlen,
@@ -369,10 +411,23 @@ def echo():
 		with open(path_folder+'boatlist.json', 'w') as outfile:
 			#dump two lists with dict names and add formatting (default=str solves date issue)
 			json.dump({'fileinfo': arraypreface, 'boats': arrayjson}, outfile, indent=4, default=str)
+
+
 	data = []
 	with open(path_folder+"boatlist.json", "r") as jdata:
 		data = json.load(jdata)
 		data['boats'].sort(key=keyparam)
 	return render_template('results.html', boatlist=data['boats'],predata=data['fileinfo'])
 
+#write to excel
+	import tablib
+
+	datax = tablib.Dataset()
+	datax.append_separator(dt_string + ' Currency=' + curr)
+	datax.json = json.dumps(arrayjson)
+
+	data_export = datax.export('xlsx')
+	with open('output/boatlist.xlsx', 'wb') as f:  # open the xlsx file
+		f.write(data_export)  # write the dataset to the xlsx file
+	f.close()
 
