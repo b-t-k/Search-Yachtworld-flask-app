@@ -99,16 +99,16 @@ def echo():
 			#set high price
 			maxprice=''
 			if maxprice == '':
-				maxpricenum = '120000'
-				maxprice = maxpricenum
+				echo.maxpricenum = '120000'
+				maxprice = echo.maxpricenum
 			else:
-				maxpricenum = maxprice
+				echo.maxpricenum = maxprice
 
 			if curr == "CAD":
-				maxpricenum = int(maxpricenum) / exchange
-				maxpricenum = str(math.trunc(maxpricenum))
+				echo.maxpricenum = int(echo.maxpricenum) / exchange
+				echo.maxpricenum = str(math.trunc(echo.maxpricenum))
 
-			pricerange = '&price-lt=' + maxpricenum
+			pricerange = '&price-lt=' + echo.maxpricenum
 			boatlength = '&length-gt=' + lowlen + '&length-lt=' + highlen
 
 			# create list of url variables
@@ -255,12 +255,12 @@ def echo():
 
 			#set high price
 			if maxprice == '':
-				maxpricenum = '120000'
-				maxprice = maxpricenum
+				echo.maxpricenum = '120000'
+				maxprice = echo.maxpricenum
 			else:
-				maxpricenum = maxprice
+				echo.maxpricenum = maxprice
 
-			pricerange = '&price=' + echo.minpricenum + '-' + maxpricenum
+			pricerange = '&price=' + echo.minpricenum + '-' + echo.maxpricenum
 			currlen = '?currency=' + curr + '&length=' + lowlen + '-' + highlen
 
 			# set regions
@@ -399,7 +399,7 @@ def echo():
 					'Boatcount': echo.boatcount,
 					'Currency': curr,
 					'Low': echo.minpricenum,
-					'High': maxprice,
+					'High': echo.maxpricenum,
 					'Short':lowlen,
 					'Long': highlen,
 					'Creator': 'http://neverforever.ca'
