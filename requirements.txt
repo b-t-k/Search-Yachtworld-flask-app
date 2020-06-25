@@ -1,0 +1,9 @@
+flask==1.1.2
+requests>=3.0.0dev,>=2.18.0,
+request
+beautifulsoup4
+jsonify
+tablib[xlsx]
+
+google-cloud-storage==1.24.1
+googleapis_common_protos

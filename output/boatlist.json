@@ -1,11 +1,18 @@
 {
     "fileinfo": [
         {
-            "Date": "April 09, 2020 11:14",
-            "Text": "Results are a Yachtworld search of sailboats in Washington, Oregon and B.C.",
+            "Date": "May 20, 2020 15:06",
+            "urllisting": [
+                "https://www.yachtworld.com/boats-for-sale/type-sail/region-northamerica/country-canada/province-british-columbia/?currency=CAD&length=34-48&price=30000-120000",
+                "https://www.yachtworld.com/boats-for-sale/type-sail/region-northamerica/country-united-states/state-washington/?currency=CAD&length=34-48&price=30000-120000",
+                "https://www.yachtworld.com/boats-for-sale/type-sail/region-northamerica/country-united-states/state-oregon/?currency=CAD&length=34-48&price=30000-120000"
+            ],
+            "Text": "Results are a search of sailboats in Washington, Oregon and B.C. from ",
+            "Listing": "Yachtworld.com",
+            "Boatcount": 131,
             "Currency": "CAD",
-            "Low": "600000",
-            "High": "1200000",
+            "Low": "30000",
+            "High": "120000",
             "Short": "34",
             "Long": "48",
             "Creator": "http://neverforever.ca"
@@ -13,116 +20,1183 @@
     ],
     "boats": [
         {
-            "URL": "https://www.yachtworld.com/boats/2020/lagoon-46-3490119/",
-            "Name": "Lagoon 46",
-            "Price": "Call for Price",
-            "Size": "46 ft / 2020",
+            "URL": "https://www.yachtworld.com/boats/1980/cheoy-lee-clipper-42-ketch-3577567/",
+            "Name": "Cheoy Lee Clipper 42 Ketch",
+            "Price": "80,000",
+            "Size": "42 ft / 1980",
             "Location": "Vancouver, British Columbia, Canada",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/75/79/6927579_20181204131633506_1_LARGE.jpg?f=/1/75/79/6927579_20181204131633506_1_LARGE.jpg&w=520&h=346&t=1543958481"
+            "Thumb": "https://newimages.yachtworld.com/resize/1/16/77/7191677_20190822081237806_1_LARGE.jpg?f=/1/16/77/7191677_20190822081237806_1_LARGE.jpg&w=520&h=346&t=1566486758",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2021/lagoon-42-3012449/",
-            "Name": "Lagoon 42",
-            "Price": "Call for Price",
-            "Size": "42 ft / 2021",
+            "URL": "https://www.yachtworld.com/boats/1979/whitby-42-center-cockpit-ketch-3582259/",
+            "Name": "Whitby 42 Center Cockpit Ketch",
+            "Price": "78,000",
+            "Size": "42 ft / 1979",
+            "Location": "Lund, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/67/58/7206758_20191028121941875_1_LARGE.jpg?f=/1/67/58/7206758_20191028121941875_1_LARGE.jpg&w=520&h=346&t=1572290382",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1996/vancouver-42-3605129/",
+            "Name": "Vancouver 42",
+            "Price": "58,500",
+            "Size": "42 ft / 1996",
+            "Location": "Duncan, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/78/91/7267891_20191031120513973_1_LARGE.jpg?f=/1/78/91/7267891_20191031120513973_1_LARGE.jpg&w=520&h=346&t=1572552877",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1975/newport-41-3581770/",
+            "Name": "Newport 41",
+            "Price": "54,450",
+            "Size": "41 ft / 1975",
             "Location": "Vancouver, British Columbia, Canada",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/5/91/5950591_20160926163747406_1_LARGE.jpg?f=/1/5/91/5950591_20160926163747406_1_LARGE.jpg&w=520&h=346&t=1474933076"
+            "Thumb": "https://newimages.yachtworld.com/resize/1/91/22/7179122_20190812111821197_1_LARGE.jpg?f=/1/91/22/7179122_20190812111821197_1_LARGE.jpg&w=520&h=346&t=1565634375",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2010/chris-white-designs-atlantic-48-3115967/",
-            "Name": "Chris White Designs ATLANTIC 48",
-            "Price": "789,969",
-            "Size": "48 ft / 2010",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/68/19/6316819_20170729095924386_1_LARGE.jpg?f=/1/68/19/6316819_20170729095924386_1_LARGE.jpg&w=520&h=346&t=1502035763"
+            "URL": "https://www.yachtworld.com/boats/1968/van-de-stadt-rebel-3541460/",
+            "Name": "Van De Stadt Rebel",
+            "Price": "59,000",
+            "Size": "41 ft / 1968",
+            "Location": "North Saanich, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/97/64/7079764_20190911151426128_1_LARGE.jpg?f=/1/97/64/7079764_20190911151426128_1_LARGE.jpg&w=520&h=346&t=1568240081",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2013/chris-white-designs-atlantic-47-3012878/",
-            "Name": "Chris White Designs Atlantic 47",
-            "Price": "908,814",
-            "Size": "47 ft / 2013",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/16/39/5951639_20160927131404750_1_LARGE.jpg?f=/1/16/39/5951639_20160927131404750_1_LARGE.jpg&w=520&h=346&t=1477156939"
+            "URL": "https://www.yachtworld.com/boats/1985/hunter-legend-sloop-3598315/",
+            "Name": "Hunter Legend Sloop",
+            "Price": "79,000",
+            "Size": "40 ft / 1985",
+            "Location": "Nanaimo, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/95/44/7249544_20191014195447718_1_LARGE.jpg?f=/1/95/44/7249544_20191014195447718_1_LARGE.jpg&w=520&h=346&t=1571108088",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2020/tartan-4700-3167689/",
-            "Name": "Tartan 4700",
-            "Price": "Call for Price",
-            "Size": "47 ft / 2020",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/23/0/3742300_20120405081914_5_LARGE.jpg?f=/1/23/0/3742300_20120405081914_5_LARGE.jpg&w=520&h=346&t=1515712755"
+            "URL": "https://www.yachtworld.com/boats/1935/rhodes-narwhal-ketch-3052100/",
+            "Name": "Rhodes Narwhal Ketch",
+            "Price": "89,500",
+            "Size": "40 ft / 1935",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/60/16/6086016_20170202123145638_1_LARGE.jpg?f=/1/60/16/6086016_20170202123145638_1_LARGE.jpg&w=520&h=346&t=1486071935",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2019/beneteau-america-46-1-3218543/",
-            "Name": "Beneteau America 46.1",
-            "Price": "Call for Price",
-            "Size": "46 ft / 2019",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/29/90/6742990_20190903144632795_1_LARGE.jpg?f=/1/29/90/6742990_20190903144632795_1_LARGE.jpg&w=520&h=346&t=1567547497"
+            "URL": "https://www.yachtworld.com/boats/1981/c-c-40-mk2-2926295/",
+            "Name": "C&C 40 MK2",
+            "Price": "69,900",
+            "Size": "40 ft / 1981",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/98/80/5609880_20160119105048046_1_LARGE.jpg?f=/1/98/80/5609880_20160119105048046_1_LARGE.jpg&w=520&h=346&t=1516950388",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2015/garcia-exploration-45-3592549/",
-            "Name": "Garcia Exploration 45",
-            "Price": "767,598",
-            "Size": "45 ft / 2015",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/29/7/7232907_20191001103957530_1_LARGE.jpg?f=/1/29/7/7232907_20191001103957530_1_LARGE.jpg&w=520&h=346&t=1569953703"
+            "URL": "https://www.yachtworld.com/boats/1990/hughes-38-mark-iii-3661719/",
+            "Name": "Hughes 38 Mark III",
+            "Price": "65,500",
+            "Size": "38 ft / 1990",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/80/27/7398027_20200517113935404_1_LARGE.jpg?f=/1/80/27/7398027_20200517113935404_1_LARGE.jpg&w=520&h=346&t=1589740776",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2011/bestevaer-45st-3132559/",
-            "Name": "Bestevaer 45ST",
-            "Price": "697,689",
-            "Size": "45 ft / 2011",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/20/97/6372097_20190809090010500_1_LARGE.jpg?f=/1/20/97/6372097_20190809090010500_1_LARGE.jpg&w=520&h=346&t=1565366761"
+            "URL": "https://www.yachtworld.com/boats/1976/ct-37-3593789/",
+            "Name": "CT 37",
+            "Price": "79,900",
+            "Size": "37 ft / 1976",
+            "Location": "Ladysmith, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/46/35/7234635_20191003161753241_1_LARGE.jpg?f=/1/46/35/7234635_20191003161753241_1_LARGE.jpg&w=520&h=346&t=1570145006",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2019/jeanneau-sun-odyssey-440-3519781/",
-            "Name": "Jeanneau Sun Odyssey 440",
-            "Price": "609,583",
-            "Size": "44 ft / 2019",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/79/59/7017959_20190426141830189_1_LARGE.jpg?f=/1/79/59/7017959_20190426141830189_1_LARGE.jpg&w=520&h=346&t=1556313528"
+            "URL": "https://www.yachtworld.com/boats/1982/c-c-sloop-3529213/",
+            "Name": "C&C Sloop",
+            "Price": "75,000",
+            "Size": "37 ft / 1982",
+            "Location": "North Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/62/14/7046214_20190411102147232_1_LARGE.jpg?f=/1/62/14/7046214_20190411102147232_1_LARGE.jpg&w=520&h=346&t=1555003384",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2020/tartan-4300-3167690/",
-            "Name": "Tartan 4300",
-            "Price": "Call for Price",
-            "Size": "43 ft / 2020",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/22/86/3742286_20120405075403_10_LARGE.jpg?f=/1/22/86/3742286_20120405075403_10_LARGE.jpg&w=520&h=346&t=1515712620"
+            "URL": "https://www.yachtworld.com/boats/2005/bavaria-36-3668496/",
+            "Name": "Bavaria 36",
+            "Price": "99,900",
+            "Size": "37 ft / 2005",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/96/11/7429611_20200410223518369_1_LARGE.jpg?f=/1/96/11/7429611_20200410223518369_1_LARGE.jpg&w=520&h=346&t=1586584336",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2021/lagoon-42-3012746/",
-            "Name": "Lagoon 42",
-            "Price": "914,865",
-            "Size": "42 ft / 2021",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/14/18/5951418_20160927112627865_1_LARGE.jpg?f=/1/14/18/5951418_20160927112627865_1_LARGE.jpg&w=520&h=346&t=1475000877"
+            "URL": "https://www.yachtworld.com/boats/1987/beneteau-first-375-3550017/",
+            "Name": "Beneteau First 375",
+            "Price": "64,900",
+            "Size": "37 ft / 1987",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/79/90/7107990_20190609163123109_1_LARGE.jpg?f=/1/79/90/7107990_20190609163123109_1_LARGE.jpg&w=520&h=346&t=1560124005",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2021/lagoon-42-3471005/",
-            "Name": "Lagoon 42",
-            "Price": "914,865",
-            "Size": "42 ft / 2021",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/14/18/5951418_20160927112627865_1_LARGE.jpg?f=/1/14/18/5951418_20160927112627865_1_LARGE.jpg&w=520&h=346&t=1539904246"
+            "URL": "https://www.yachtworld.com/boats/1983/c-c-37-performance-cruiser-2887588/",
+            "Name": "C&C 37 Performance Cruiser",
+            "Price": "62,900",
+            "Size": "37 ft / 1983",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/85/59/5388559_20150918103754781_1_LARGE.jpg?f=/1/85/59/5388559_20150918103754781_1_LARGE.jpg&w=520&h=346&t=1444934761",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2019/lagoon-40-3197638/",
-            "Name": "Lagoon 40",
-            "Price": "796,756",
-            "Size": "40 ft / 2019",
-            "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/86/30/6368630_20180409152857612_1_LARGE.jpg?f=/1/86/30/6368630_20180409152857612_1_LARGE.jpg&w=520&h=346&t=1523312977"
+            "URL": "https://www.yachtworld.com/boats/1985/express-37-3675497/",
+            "Name": "Express 37",
+            "Price": "74,900",
+            "Size": "37 ft / 1985",
+            "Location": "Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/37/79/7453779_20200517125901723_1_LARGE.jpg?f=/1/37/79/7453779_20200517125901723_1_LARGE.jpg&w=520&h=346&t=1589745911",
+            "Listing": "Yachtworld.com"
         },
         {
-            "URL": "https://www.yachtworld.com/boats/2020/fountaine-pajot-lucia-40-3214997/",
-            "Name": "Fountaine Pajot Lucia 40",
-            "Price": "740,893",
-            "Size": "40 ft / 2020",
+            "URL": "https://www.yachtworld.com/boats/1983/cooper-banner-37-3621192/",
+            "Name": "Cooper Banner 37",
+            "Price": "84,900",
+            "Size": "37 ft / 1983",
+            "Location": "Duncan, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/91/32/7319132_20191230130319878_1_LARGE.jpg?f=/1/91/32/7319132_20191230130319878_1_LARGE.jpg&w=520&h=346&t=1577739801",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2001/beneteau-oceanis-clipper-361-3664596/",
+            "Name": "Beneteau Oceanis Clipper 361",
+            "Price": "109,000",
+            "Size": "36 ft / 2001",
+            "Location": "Bowen Island, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/65/0/7416500_20200324150450187_1_LARGE.jpg?f=/1/65/0/7416500_20200324150450187_1_LARGE.jpg&w=520&h=346&t=1585087544",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1981/schock-new-york-36-3591297/",
+            "Name": "Schock New York 36",
+            "Price": "34,900",
+            "Size": "36 ft / 1981",
+            "Location": "Sidney, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/27/24/7232724_20190927114351878_1_LARGE.jpg?f=/1/27/24/7232724_20190927114351878_1_LARGE.jpg&w=520&h=346&t=1569609832",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2002/hunter-356-3661506/",
+            "Name": "Hunter 356",
+            "Price": "107,000",
+            "Size": "36 ft / 2002",
+            "Location": "Nanaimo, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/65/68/7186568_20190819215110513_1_LARGE.jpg?f=/1/65/68/7186568_20190819215110513_1_LARGE.jpg&w=520&h=346&t=1584146505",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1986/catalina-36-mk-i-3675476/",
+            "Name": "Catalina 36 MK I",
+            "Price": "62,900",
+            "Size": "36 ft / 1986",
+            "Location": "West Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/36/88/7453688_20200519175445466_1_LARGE.jpg?f=/1/36/88/7453688_20200519175445466_1_LARGE.jpg&w=520&h=346&t=1589936086",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2008/hunter-36-3665515/",
+            "Name": "Hunter 36",
+            "Price": "119,000",
+            "Size": "36 ft / 2008",
+            "Location": "Sidney, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/4/90/7420490_20200328172628293_1_LARGE.jpg?f=/1/4/90/7420490_20200328172628293_1_LARGE.jpg&w=520&h=346&t=1585441616",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1979/santana-sloop-3645685/",
+            "Name": "Santana Sloop",
+            "Price": "32,900",
+            "Size": "35 ft / 1979",
+            "Location": "Nanaimo, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/16/69/7331669_20200122112948458_1_LARGE.jpg?f=/1/16/69/7331669_20200122112948458_1_LARGE.jpg&w=520&h=346&t=1579733450",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1965/sailboat-magellan-m35-3530381/",
+            "Name": "Sailboat Magellan M35",
+            "Price": "89,000",
+            "Size": "35 ft / 1965",
+            "Location": "Victoria, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/98/73/7049873_20190808072500709_1_LARGE.jpg?f=/1/98/73/7049873_20190808072500709_1_LARGE.jpg&w=520&h=346&t=1565274353",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1990/j-boats-j-35-3669464/",
+            "Name": "J Boats J/35",
+            "Price": "46,900",
+            "Size": "35 ft / 1990",
+            "Location": "Duncan, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/42/80/7434280_20200419102039182_1_LARGE.jpg?f=/1/42/80/7434280_20200419102039182_1_LARGE.jpg&w=520&h=346&t=1587333339",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1999/carroll-marine-1d35-3197631/",
+            "Name": "Carroll Marine 1D35",
+            "Price": "79,900",
+            "Size": "35 ft / 1999",
+            "Location": "West Vancouver, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/53/2/6675302_20180409155239054_1_LARGE.jpg?f=/1/53/2/6675302_20180409155239054_1_LARGE.jpg&w=520&h=346&t=1523314589",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1989/sadler-34-3618528/",
+            "Name": "Sadler 34",
+            "Price": "78,000",
+            "Size": "34 ft / 1989",
+            "Location": "Comox, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/74/36/7307436_20191211211921330_1_LARGE.jpg?f=/1/74/36/7307436_20191211211921330_1_LARGE.jpg&w=520&h=346&t=1576127962",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1997/catalina-34-mark-ii-3645301/",
+            "Name": "Catalina 34 Mark II",
+            "Price": "94,900",
+            "Size": "34 ft / 1997",
+            "Location": "Sidney, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/75/85/7337585_20200515210604567_1_LARGE.jpg?f=/1/75/85/7337585_20200515210604567_1_LARGE.jpg&w=520&h=346&t=1589601966",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/hans-christian-34-3579412/",
+            "Name": "Hans Christian 34",
+            "Price": "89,900",
+            "Size": "34 ft / 1980",
+            "Location": "Salt Spring Island, British Columbia, Canada",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/72/13/7197213_20190827152738075_1_LARGE.jpg?f=/1/72/13/7197213_20190827152738075_1_LARGE.jpg&w=520&h=346&t=1566944860",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1986/celestial-48-3656587/",
+            "Name": "Celestial 48",
+            "Price": "103,524",
+            "Size": "48 ft / 1986",
+            "Location": "Port Townsend, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/81/14/7378114_20200225150344145_1_LARGE.jpg?f=/1/81/14/7378114_20200225150344145_1_LARGE.jpg&w=520&h=346&t=1582752535",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/lafitte-44-3515999/",
+            "Name": "Lafitte 44",
+            "Price": "117,420",
+            "Size": "44 ft / 1980",
+            "Location": "Bellingham, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/53/4/7005304_20190304130621342_1_LARGE.jpg?f=/1/53/4/7005304_20190304130621342_1_LARGE.jpg&w=520&h=346&t=1563015718",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1993/bruce-roberts-pilothouse-44-2998071/",
+            "Name": "Bruce Roberts Pilothouse 44",
+            "Price": "53,499",
+            "Size": "44 ft / 1993",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/79/66/5907966_20160816181335864_1_LARGE.jpg?f=/1/79/66/5907966_20160816181335864_1_LARGE.jpg&w=520&h=346&t=1471396415",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1973/spencer-44-3483112/",
+            "Name": "Spencer 44",
+            "Price": "55,584",
+            "Size": "44 ft / 1973",
             "Location": "Seattle, Washington, United States",
-            "Thumb": "https://newimages.yachtworld.com/resize/1/10/7/6731007_20190221152907663_1_LARGE.jpg?f=/1/10/7/6731007_20190221152907663_1_LARGE.jpg&w=520&h=346&t=1550868203"
+            "Thumb": "https://newimages.yachtworld.com/resize/1/61/94/6896194_20181106113425865_1_LARGE.jpg?f=/1/61/94/6896194_20181106113425865_1_LARGE.jpg&w=520&h=346&t=1541534767",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/bruce-roberts-cutter-3545292/",
+            "Name": "Bruce Roberts Cutter",
+            "Price": "55,445",
+            "Size": "44 ft / 1980",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/38/26/7083826_20190515125650331_1_LARGE.jpg?f=/1/38/26/7083826_20190515125650331_1_LARGE.jpg&w=520&h=346&t=1557950210",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1987/luengen-43-offshore-ketch-3541760/",
+            "Name": "Luengen 43 Offshore Ketch",
+            "Price": "96,576",
+            "Size": "43 ft / 1987",
+            "Location": "Gig Harbor, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/72/68/6777268_0_070720181145_2.jpg?f=/1/72/68/6777268_0_070720181145_2.jpg&w=520&h=346&t=1531784765",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1934/alden-cutter-42-3610720/",
+            "Name": "Alden Cutter 42",
+            "Price": "54,889",
+            "Size": "42 ft / 1934",
+            "Location": "Port Townsend, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/98/63/7279863_20191111135955166_1_LARGE.jpg?f=/1/98/63/7279863_20191111135955166_1_LARGE.jpg&w=520&h=346&t=1584396424",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1967/spencer-center-cockpit-ketch-3582010/",
+            "Name": "Spencer CENTER COCKPIT KETCH",
+            "Price": "41,549",
+            "Size": "42 ft / 1967",
+            "Location": "Port Orchard, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/48/58/7204858_20190904103852901_1_LARGE.jpg?f=/1/48/58/7204858_20190904103852901_1_LARGE.jpg&w=520&h=346&t=1567618734",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1968/ericson-41-sloop-3253580/",
+            "Name": "Ericson 41 Sloop",
+            "Price": "40,993",
+            "Size": "41 ft / 1968",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/99/76/6849976_20191010195923450_1_LARGE.jpg?f=/1/99/76/6849976_20191010195923450_1_LARGE.jpg&w=520&h=346&t=1570762942",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1987/morgan-classic-41-center-cockpit-3217370/",
+            "Name": "Morgan Classic 41 Center Cockpit",
+            "Price": "91,574",
+            "Size": "41 ft / 1987",
+            "Location": "Olympia, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/81/72/6738172_20180607114228702_1_LARGE.jpg?f=/1/81/72/6738172_20180607114228702_1_LARGE.jpg&w=520&h=346&t=1528397551",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1977/islander-freeport-41-3595242/",
+            "Name": "Islander Freeport 41",
+            "Price": "86,849",
+            "Size": "41 ft / 1977",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/31/86/7243186_20191007144120101_1_LARGE.jpg?f=/1/31/86/7243186_20191007144120101_1_LARGE.jpg&w=520&h=346&t=1570485117",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1984/c-c-sloop-3558198/",
+            "Name": "C&C Sloop",
+            "Price": "52,665",
+            "Size": "41 ft / 1984",
+            "Location": "Gig Harbor, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/19/34/7131934_20190628151434214_1_LARGE.jpg?f=/1/19/34/7131934_20190628151434214_1_LARGE.jpg&w=520&h=346&t=1561765266",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1976/ct-ketch-3542635/",
+            "Name": "CT Ketch",
+            "Price": "54,125",
+            "Size": "41 ft / 1976",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/62/23/7086223_20190517084310596_1_LARGE.jpg?f=/1/62/23/7086223_20190517084310596_1_LARGE.jpg&w=520&h=346&t=1558109008",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1987/morgan-center-cockpit-3492611/",
+            "Name": "Morgan Center Cockpit",
+            "Price": "109,778",
+            "Size": "41 ft / 1987",
+            "Location": "Bremerton, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/53/35/6935335_20181212110419067_1_LARGE.jpg?f=/1/53/35/6935335_20181212110419067_1_LARGE.jpg&w=520&h=346&t=1544641595",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1981/islander-freeport-41-3588682/",
+            "Name": "Islander Freeport 41",
+            "Price": "97,132",
+            "Size": "41 ft / 1981",
+            "Location": "Olympia, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/71/63/7227163_20190923112300274_1_LARGE.jpg?f=/1/71/63/7227163_20190923112300274_1_LARGE.jpg&w=520&h=346&t=1569263259",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1981/valiant-40-3605549/",
+            "Name": "Valiant 40",
+            "Price": "117,420",
+            "Size": "40 ft / 1981",
+            "Location": "Port Townsend, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/81/96/7268196_20191031142658585_1_LARGE.jpg?f=/1/81/96/7268196_20191031142658585_1_LARGE.jpg&w=520&h=346&t=1572558179",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1947/custom-irving-sloop-3668155/",
+            "Name": "Custom Irving Sloop",
+            "Price": "118,115",
+            "Size": "40 ft / 1947",
+            "Location": "Port Townsend, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/53/33/7425333_20200410144116861_1_LARGE.jpg?f=/1/53/33/7425333_20200410144116861_1_LARGE.jpg&w=520&h=346&t=1586555400",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/mariner-40-3656229/",
+            "Name": "Mariner 40",
+            "Price": "104,080",
+            "Size": "40 ft / 1978",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/34/72/7373472_20200220215102284_1_LARGE.jpg?f=/1/34/72/7373472_20200220215102284_1_LARGE.jpg&w=520&h=346&t=1587059691",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1981/ta-shing-panda-cutter-3644539/",
+            "Name": "Ta Shing Panda Cutter",
+            "Price": "118,115",
+            "Size": "40 ft / 1981",
+            "Location": "Bremerton, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/28/29/7332829_20200122152129599_1_LARGE.jpg?f=/1/28/29/7332829_20200122152129599_1_LARGE.jpg&w=520&h=346&t=1583424930",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1977/valiant-40-3661982/",
+            "Name": "Valiant 40",
+            "Price": "76,427",
+            "Size": "40 ft / 1977",
+            "Location": "Olympia, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/90/53/7399053_20200316142140781_1_LARGE.jpg?f=/1/90/53/7399053_20200316142140781_1_LARGE.jpg&w=520&h=346&t=1584393701",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/custom-frederick-amor-40-3654122/",
+            "Name": "Custom Frederick Amor 40",
+            "Price": "118,115",
+            "Size": "40 ft / 1980",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/9/53/7370953_20200219085940991_1_LARGE.jpg?f=/1/9/53/7370953_20200219085940991_1_LARGE.jpg&w=520&h=346&t=1582141925",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1994/colin-archer-custom-ketch-3536979/",
+            "Name": "Colin Archer Custom Ketch",
+            "Price": "62,532",
+            "Size": "40 ft / 1994",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/15/75/7061575_20190424143432466_1_LARGE.jpg?f=/1/15/75/7061575_20190424143432466_1_LARGE.jpg&w=520&h=346&t=1556142625",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1971/cal-39-3554428/",
+            "Name": "CAL 39",
+            "Price": "38,214",
+            "Size": "39 ft / 1971",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/69/81/7116981_20190615170548107_1_LARGE.jpg?f=/1/69/81/7116981_20190615170548107_1_LARGE.jpg&w=520&h=346&t=1560643548",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1977/fast-passage-39-3602671/",
+            "Name": "Fast Passage 39",
+            "Price": "104,219",
+            "Size": "39 ft / 1977",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/33/79/7263379_0_090920191518_1.jpg?f=/1/33/79/7263379_0_090920191518_1.jpg&w=520&h=346&t=1572047319",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/cal-39-3541961/",
+            "Name": "CAL 39",
+            "Price": "34,740",
+            "Size": "39 ft / 1978",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/41/8/7084108_0_070920181315_1.jpg?f=/1/41/8/7084108_0_070920181315_1.jpg&w=520&h=346&t=1557963968",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1997/beneteau-oceanis-3555351/",
+            "Name": "Beneteau Oceanis",
+            "Price": "96,576",
+            "Size": "38 ft / 1997",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/31/53/7123153_20190621102330544_4_LARGE.jpg?f=/1/31/53/7123153_20190621102330544_4_LARGE.jpg&w=520&h=346&t=1561138123",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1969/hinckley-38-3563560/",
+            "Name": "Hinckley 38",
+            "Price": "104,219",
+            "Size": "38 ft / 1969",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/89/29/7148929_20190716082639737_1_LARGE.jpg?f=/1/89/29/7148929_20190716082639737_1_LARGE.jpg&w=520&h=346&t=1563461733",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1996/x-yachts-imx-38-3664290/",
+            "Name": "X-Yachts IMX-38",
+            "Price": "88,239",
+            "Size": "38 ft / 1996",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/56/86/7395686_20200420115757753_1_LARGE.jpg?f=/1/56/86/7395686_20200420115757753_1_LARGE.jpg&w=520&h=346&t=1587508782",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/hans-christian-38-mk-ii-3571996/",
+            "Name": "Hans Christian 38 MK II",
+            "Price": "100,050",
+            "Size": "38 ft / 1980",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/56/57/7175657_20190813125015358_1_LARGE.jpg?f=/1/56/57/7175657_20190813125015358_1_LARGE.jpg&w=520&h=346&t=1565725915",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1984/ct-38-3554680/",
+            "Name": "CT 38",
+            "Price": "88,795",
+            "Size": "38 ft / 1984",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/61/7/7116107_20190620160818147_1_LARGE.jpg?f=/1/61/7/7116107_20190620160818147_1_LARGE.jpg&w=520&h=346&t=1561072105",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1977/tartan-38-3573592/",
+            "Name": "Tartan 38",
+            "Price": "52,665",
+            "Size": "38 ft / 1977",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/2/86/7180286_20190812141931613_1_LARGE.jpg?f=/1/2/86/7180286_20190812141931613_1_LARGE.jpg&w=520&h=346&t=1565651126",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1986/ct-cruisers-3580484/",
+            "Name": "CT cruisers",
+            "Price": "103,524",
+            "Size": "38 ft / 1986",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/6/52/7200652_20190831083816437_1_LARGE.jpg?f=/1/6/52/7200652_20190831083816437_1_LARGE.jpg&w=520&h=346&t=1567265896",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1986/c-c-mark-iii-3655642/",
+            "Name": "C&C Mark III",
+            "Price": "54,889",
+            "Size": "38 ft / 1986",
+            "Location": "Bainbridge Island, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/65/15/7376515_20200224102518101_1_LARGE.jpg?f=/1/65/15/7376515_20200224102518101_1_LARGE.jpg&w=520&h=346&t=1582660404",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/bluewater-yachts-ingrid-38-3566780/",
+            "Name": "Bluewater Yachts Ingrid 38",
+            "Price": "66,006",
+            "Size": "38 ft / 1978",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/83/40/7158340_20190725092412755_1_LARGE.jpg?f=/1/83/40/7158340_20190725092412755_1_LARGE.jpg&w=520&h=346&t=1567614239",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1986/ta-shing-panda-38-cutter-3665190/",
+            "Name": "Ta Shing Panda 38 Cutter",
+            "Price": "119,366",
+            "Size": "38 ft / 1986",
+            "Location": "Everett, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/76/79/7417679_20200325144437437_1_LARGE.jpg?f=/1/76/79/7417679_20200325144437437_1_LARGE.jpg&w=520&h=346&t=1585173152",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1977/alajuela-38-3607384/",
+            "Name": "Alajuela 38",
+            "Price": "69,479",
+            "Size": "38 ft / 1977",
+            "Location": "Olympia, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/64/73/7276473_20191107120706180_1_LARGE.jpg?f=/1/64/73/7276473_20191107120706180_1_LARGE.jpg&w=520&h=346&t=1573157344",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/downeast-38-3646428/",
+            "Name": "Downeast 38",
+            "Price": "38,214",
+            "Size": "38 ft / 1978",
+            "Location": "Port Orchard, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/14/6/7341406_20200124153025725_1_LARGE.jpg?f=/1/14/6/7341406_20200124153025725_1_LARGE.jpg&w=520&h=346&t=1579973545",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1990/hunter-37-5-3660843/",
+            "Name": "Hunter 37.5",
+            "Price": "80,596",
+            "Size": "37 ft / 1990",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/43/23/7394323_20200422141224434_1_LARGE.jpg?f=/1/43/23/7394323_20200422141224434_1_LARGE.jpg&w=520&h=346&t=1587590656",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1989/hunter-legend-37-5-3593070/",
+            "Name": "Hunter Legend 37.5",
+            "Price": "68,785",
+            "Size": "37 ft / 1989",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/99/22/7229922_20190930121406584_1_LARGE.jpg?f=/1/99/22/7229922_20190930121406584_1_LARGE.jpg&w=520&h=346&t=1569870859",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1977/tayana-37-3201679/",
+            "Name": "Tayana 37",
+            "Price": "75,733",
+            "Size": "37 ft / 1977",
+            "Location": "Port Townsend, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/93/31/6649331_20180507154740441_1_LARGE.jpg?f=/1/93/31/6649331_20180507154740441_1_LARGE.jpg&w=520&h=346&t=1556819914",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/cooper-seabird-3231406/",
+            "Name": "Cooper Seabird",
+            "Price": "59,058",
+            "Size": "37 ft / 1980",
+            "Location": "Bremerton, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/2/11/6780211_20180721134615668_1_LARGE.jpg?f=/1/2/11/6780211_20180721134615668_1_LARGE.jpg&w=520&h=346&t=1547313245",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1981/nautor-swan-371-3604790/",
+            "Name": "Nautor Swan 371",
+            "Price": "96,576",
+            "Size": "37 ft / 1981",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/83/25/7268325_20191030193205762_1_LARGE.jpg?f=/1/83/25/7268325_20191030193205762_1_LARGE.jpg&w=520&h=346&t=1572489269",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1990/island-packet-32-3674747/",
+            "Name": "Island Packet 32",
+            "Price": "96,576",
+            "Size": "37 ft / 1990",
+            "Location": "Bellingham, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/9/14/7450914_20200513214506424_1_LARGE.jpg?f=/1/9/14/7450914_20200513214506424_1_LARGE.jpg&w=520&h=346&t=1589431506",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1984/tayana-37-3609400/",
+            "Name": "Tayana 37",
+            "Price": "65,241",
+            "Size": "37 ft / 1984",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/25/50/7282550_20191113220037791_1_LARGE.jpg?f=/1/25/50/7282550_20191113220037791_1_LARGE.jpg&w=520&h=346&t=1573719353",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1976/irwin-37-mark-iii-ketch-3599414/",
+            "Name": "Irwin 37 Mark III Ketch",
+            "Price": "40,993",
+            "Size": "37 ft / 1976",
+            "Location": "Sequim, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/41/43/7254143_20191017123736113_1_LARGE.jpg?f=/1/41/43/7254143_20191017123736113_1_LARGE.jpg&w=520&h=346&t=1571341179",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1976/irwin-37-mark-iii-ketch-3599414/",
+            "Name": "Irwin 37 Mark III Ketch",
+            "Price": "40,993",
+            "Size": "37 ft / 1976",
+            "Location": "Sequim, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/41/43/7254143_20191017123736113_1_LARGE.jpg?f=/1/41/43/7254143_20191017123736113_1_LARGE.jpg&w=520&h=346&t=1571341179",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1982/pacific-seacraft-37-3129665/",
+            "Name": "Pacific Seacraft 37",
+            "Price": "79,207",
+            "Size": "37 ft / 1982",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/61/21/6366121_20190802165119337_1_LARGE.jpg?f=/1/61/21/6366121_20190802165119337_1_LARGE.jpg&w=520&h=346&t=1564789909",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1990/jeanneau-sun-odyssey-36-3642339/",
+            "Name": "Jeanneau Sun Odyssey 36",
+            "Price": "68,785",
+            "Size": "36 ft / 1990",
+            "Location": "Everett, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/96/47/7329647_20200113154558064_1_LARGE.jpg?f=/1/96/47/7329647_20200113154558064_1_LARGE.jpg&w=520&h=346&t=1579206257",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2001/custom-brent-swain-36-3545880/",
+            "Name": "Custom Brent Swain 36",
+            "Price": "68,785",
+            "Size": "36 ft / 2001",
+            "Location": "Everett, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/15/92/6341592_20170819133911419_1_LARGE.jpg?f=/1/15/92/6341592_20170819133911419_1_LARGE.jpg&w=520&h=346&t=1559079913",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/union-polaris-cutter-3605036/",
+            "Name": "Union Polaris Cutter",
+            "Price": "68,785",
+            "Size": "36 ft / 1980",
+            "Location": "Port Ludlow, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/65/75/7266575_20191029153306404_1_LARGE.jpg?f=/1/65/75/7266575_20191029153306404_1_LARGE.jpg&w=520&h=346&t=1572557101",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/c-c-36-3505548/",
+            "Name": "C&C 36",
+            "Price": "61,142",
+            "Size": "36 ft / 1978",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/97/61/6969761_20190130203320262_1_LARGE.jpg?f=/1/97/61/6969761_20190130203320262_1_LARGE.jpg&w=520&h=346&t=1548909201",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1989/catalina-36-mk-i-3612694/",
+            "Name": "Catalina 36 MK I",
+            "Price": "76,427",
+            "Size": "36 ft / 1989",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/35/67/7283567_20191123161056223_1_LARGE.jpg?f=/1/35/67/7283567_20191123161056223_1_LARGE.jpg&w=520&h=346&t=1574554274",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1991/catalina-36-3588231/",
+            "Name": "Catalina 36",
+            "Price": "80,596",
+            "Size": "36 ft / 1991",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/59/40/7225940_20190925111439013_1_LARGE.jpg?f=/1/59/40/7225940_20190925111439013_1_LARGE.jpg&w=520&h=346&t=1569531086",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1990/catalina-36-3527972/",
+            "Name": "Catalina 36",
+            "Price": "69,341",
+            "Size": "36 ft / 1990",
+            "Location": "Tacoma, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/22/78/7012278_20190309152406802_1_LARGE.jpg?f=/1/22/78/7012278_20190309152406802_1_LARGE.jpg&w=520&h=346&t=1552173930",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1998/beneteau-36-cc-3615690/",
+            "Name": "Beneteau 36 CC",
+            "Price": "100,745",
+            "Size": "36 ft / 1998",
+            "Location": "Bellingham, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/89/62/7298962_20191202124013951_1_LARGE.jpg?f=/1/89/62/7298962_20191202124013951_1_LARGE.jpg&w=520&h=346&t=1575499677",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1964/herreshoff-36-3484172/",
+            "Name": "Herreshoff 36",
+            "Price": "34,045",
+            "Size": "36 ft / 1964",
+            "Location": "Chimacum, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/12/95/6911295_20181114171156453_1_LARGE.jpg?f=/1/12/95/6911295_20181114171156453_1_LARGE.jpg&w=520&h=346&t=1542318313",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1991/beneteau-35-5-3660131/",
+            "Name": "Beneteau 35.5",
+            "Price": "67,395",
+            "Size": "36 ft / 1991",
+            "Location": "Olympia, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/11/12/7391112_20200309085118375_1_LARGE.jpg?f=/1/11/12/7391112_20200309085118375_1_LARGE.jpg&w=520&h=346&t=1583798927",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/union-36-3675987/",
+            "Name": "Union 36",
+            "Price": "95,882",
+            "Size": "36 ft / 1980",
+            "Location": "Bainbridge Island, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/48/48/7454848_20200518170233486_1_LARGE.jpg?f=/1/48/48/7454848_20200518170233486_1_LARGE.jpg&w=520&h=346&t=1589847447",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1985/sweden-yachts-36-3673272/",
+            "Name": "Sweden Yachts 36",
+            "Price": "104,219",
+            "Size": "36 ft / 1985",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/36/84/7443684_20200504143315067_1_LARGE.jpg?f=/1/36/84/7443684_20200504143315067_1_LARGE.jpg&w=520&h=346&t=1588710620",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/union-36-3550798/",
+            "Name": "Union 36",
+            "Price": "34,740",
+            "Size": "36 ft / 1980",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/96/98/7109698_20190611154409767_1_LARGE.jpg?f=/1/96/98/7109698_20190611154409767_1_LARGE.jpg&w=520&h=346&t=1560293526",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1990/hunter-legend-35-5-3580755/",
+            "Name": "Hunter Legend 35.5",
+            "Price": "66,561",
+            "Size": "36 ft / 1990",
+            "Location": "Tacoma, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/90/35/7189035_20190901115318312_1_LARGE.jpg?f=/1/90/35/7189035_20190901115318312_1_LARGE.jpg&w=520&h=346&t=1567364715",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1980/cheoy-lee-cruiser-3247674/",
+            "Name": "Cheoy Lee Cruiser",
+            "Price": "46,551",
+            "Size": "35 ft / 1980",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/15/40/6831540_20180905095438868_1_LARGE.jpg?f=/1/15/40/6831540_20180905095438868_1_LARGE.jpg&w=520&h=346&t=1536166478",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1982/cooper-353-pilothouse-3560521/",
+            "Name": "Cooper 353 Pilothouse",
+            "Price": "61,142",
+            "Size": "35 ft / 1982",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/97/97/7139797_20190706130939713_1_LARGE.jpg?f=/1/97/97/7139797_20190706130939713_1_LARGE.jpg&w=520&h=346&t=1562443966",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/columbia-10-7-3646015/",
+            "Name": "Columbia 10.7",
+            "Price": "50,025",
+            "Size": "35 ft / 1978",
+            "Location": "Olympia, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/1/79/7340179_20200123152718264_1_LARGE.jpg?f=/1/1/79/7340179_20200123152718264_1_LARGE.jpg&w=520&h=346&t=1579822220",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1988/o-day-35-3584785/",
+            "Name": "O'Day 35",
+            "Price": "41,618",
+            "Size": "35 ft / 1988",
+            "Location": "Racine, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/55/83/7215583_20190914081434132_1_LARGE.jpg?f=/1/55/83/7215583_20190914081434132_1_LARGE.jpg&w=520&h=346&t=1568474075",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1983/beneteau-first-35-3594449/",
+            "Name": "Beneteau First 35",
+            "Price": "56,973",
+            "Size": "35 ft / 1983",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/11/43/4701143_20140502150737298_1_LARGE.jpg?f=/1/11/43/4701143_20140502150737298_1_LARGE.jpg&w=520&h=346&t=1570214521",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1972/bristol-35-3470397/",
+            "Name": "Bristol 35",
+            "Price": "34,045",
+            "Size": "35 ft / 1972",
+            "Location": "Port Townsend, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/18/40/6871840_20181015105303261_1_LARGE.jpg?f=/1/18/40/6871840_20181015105303261_1_LARGE.jpg&w=520&h=346&t=1539636438",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/trident-voyager-pilothouse-3529925/",
+            "Name": "Trident Voyager Pilothouse",
+            "Price": "82,681",
+            "Size": "35 ft / 1978",
+            "Location": "Vashon, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/48/84/7044884_20190410121437649_1_LARGE.jpg?f=/1/48/84/7044884_20190410121437649_1_LARGE.jpg&w=520&h=346&t=1555178544",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1984/tanzer-10-5-3586667/",
+            "Name": "Tanzer 10.5",
+            "Price": "62,532",
+            "Size": "35 ft / 1984",
+            "Location": "Everett, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/12/24/7221224_20190917140633693_1_LARGE.jpg?f=/1/12/24/7221224_20190917140633693_1_LARGE.jpg&w=520&h=346&t=1568759014",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1979/baba-35-double-ended-cutter-3593589/",
+            "Name": "Baba 35 Double Ended Cutter",
+            "Price": "82,681",
+            "Size": "35 ft / 1979",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/80/49/7238049_0_040920191703_1.jpg?f=/1/80/49/7238049_0_040920191703_1.jpg&w=520&h=346&t=1570060930",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1971/coronado-cc-aft-cabin-3659113/",
+            "Name": "Coronado CC Aft Cabin",
+            "Price": "48,497",
+            "Size": "35 ft / 1971",
+            "Location": "Bremerton, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/80/92/7388092_20200305130100562_1_LARGE.jpg?f=/1/80/92/7388092_20200305130100562_1_LARGE.jpg&w=520&h=346&t=1583442147",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1957/sparkman-stephens-k35-3672181/",
+            "Name": "Sparkman & Stephens K35",
+            "Price": "68,785",
+            "Size": "35 ft / 1957",
+            "Location": "Port Townsend, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/80/84/7378084_20200227173011938_1_LARGE.jpg?f=/1/80/84/7378084_20200227173011938_1_LARGE.jpg&w=520&h=346&t=1582853451",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1974/columbia-34-3242510/",
+            "Name": "Columbia 34",
+            "Price": "83,368",
+            "Size": "34 ft / 1974",
+            "Location": "Tacoma, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/63/28/6816328_20190930162234317_1_LARGE.jpg?f=/1/63/28/6816328_20190930162234317_1_LARGE.jpg&w=520&h=346&t=1569885763",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1986/catalina-34-3650129/",
+            "Name": "Catalina 34",
+            "Price": "52,110",
+            "Size": "34 ft / 1986",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/80/97/7358097_20200205114057253_1_LARGE.jpg?f=/1/80/97/7358097_20200205114057253_1_LARGE.jpg&w=520&h=346&t=1580932042",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1999/hunter-340-3646353/",
+            "Name": "Hunter 340",
+            "Price": "91,713",
+            "Size": "34 ft / 1999",
+            "Location": "Tacoma, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/11/59/7341159_20200218123219277_1_LARGE.jpg?f=/1/11/59/7341159_20200218123219277_1_LARGE.jpg&w=520&h=346&t=1582058280",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1986/catalina-34-3598231/",
+            "Name": "Catalina 34",
+            "Price": "45,856",
+            "Size": "34 ft / 1986",
+            "Location": "Brinnon, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/11/68/7251168_20191015121102956_1_LARGE.jpg?f=/1/11/68/7251168_20191015121102956_1_LARGE.jpg&w=520&h=346&t=1571167942",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1990/cs-34-3654575/",
+            "Name": "CS 34",
+            "Price": "64,616",
+            "Size": "34 ft / 1990",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/28/70/7372870_20200220120440204_1_LARGE.jpg?f=/1/28/70/7372870_20200220120440204_1_LARGE.jpg&w=520&h=346&t=1582229080",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1983/hunter-34-3203451/",
+            "Name": "Hunter 34",
+            "Price": "44,397",
+            "Size": "34 ft / 1983",
+            "Location": "Edmonds, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/45/13/6694513_20180426190858439_1_LARGE.jpg?f=/1/45/13/6694513_20180426190858439_1_LARGE.jpg&w=520&h=346&t=1524795179",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2001/jeanneau-sun-odyssey-34-2-3584831/",
+            "Name": "Jeanneau Sun Odyssey 34.2",
+            "Price": "100,745",
+            "Size": "34 ft / 2001",
+            "Location": "Bellingham, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/51/16/7215116_20190918174348088_1_LARGE.jpg?f=/1/51/16/7215116_20190918174348088_1_LARGE.jpg&w=520&h=346&t=1568854712",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1974/kmv-gambling-3464203/",
+            "Name": "KMV Gambling",
+            "Price": "31,266",
+            "Size": "34 ft / 1974",
+            "Location": "Anacortes, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/51/5/6865105_20190729114518854_1_LARGE.jpg?f=/1/51/5/6865105_20190729114518854_1_LARGE.jpg&w=520&h=346&t=1564425955",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1985/pacific-seacraft-34-3666768/",
+            "Name": "Pacific Seacraft 34",
+            "Price": "111,028",
+            "Size": "34 ft / 1985",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/31/6/7373106_20200330110728576_1_LARGE.jpg?f=/1/31/6/7373106_20200330110728576_1_LARGE.jpg&w=520&h=346&t=1585592887",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1984/clearwater-coast-34-3548869/",
+            "Name": "Clearwater Coast 34",
+            "Price": "93,797",
+            "Size": "34 ft / 1984",
+            "Location": "Sequim, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/22/62/7102262_20190604100707020_1_LARGE.jpg?f=/1/22/62/7102262_20190604100707020_1_LARGE.jpg&w=520&h=346&t=1559668511",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1984/hunter-34-3642602/",
+            "Name": "Hunter 34",
+            "Price": "40,298",
+            "Size": "34 ft / 1984",
+            "Location": "Seattle, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/1/5/7320105_20200102124730177_1_LARGE.jpg?f=/1/1/5/7320105_20200102124730177_1_LARGE.jpg&w=520&h=346&t=1577998110",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1985/koopmans-steel-cutter-3570735/",
+            "Name": "Koopmans steel cutter",
+            "Price": "106,859",
+            "Size": "34 ft / 1985",
+            "Location": "Olympia, Washington, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/6/25/4430625_20130808210359911_1_LARGE.jpg?f=/1/6/25/4430625_20130808210359911_1_LARGE.jpg&w=520&h=346&t=1565063723",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1971/william-garden-porpoise-3662040/",
+            "Name": "William Garden Porpoise",
+            "Price": "62,532",
+            "Size": "46 ft / 1971",
+            "Location": "Newport, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/92/48/7399248_0_300320201805_0.jpg?f=/1/92/48/7399248_0_300320201805_0.jpg&w=520&h=346&t=1585616923",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1986/colvin-pilothouse-schooner-3192478/",
+            "Name": "Colvin Pilothouse Schooner",
+            "Price": "97,132",
+            "Size": "44 ft / 1986",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/9/13/6620913_20180311213236231_1_LARGE.jpg?f=/1/9/13/6620913_20180311213236231_1_LARGE.jpg&w=520&h=346&t=1522047138",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/polaris-cutter-2776185/",
+            "Name": "Polaris Cutter",
+            "Price": "97,132",
+            "Size": "43 ft / 1978",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/9/96/4820996_20160411181537970_1_LARGE.jpg?f=/1/9/96/4820996_20160411181537970_1_LARGE.jpg&w=520&h=346&t=1512433155",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1991/morgan-classic-41-3618877/",
+            "Name": "Morgan Classic 41",
+            "Price": "83,236",
+            "Size": "41 ft / 1991",
+            "Location": "Scappoose, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/5/1/7310501_20191214221725310_1_LARGE.jpg?f=/1/5/1/7310501_20191214221725310_1_LARGE.jpg&w=520&h=346&t=1576561943",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1981/gulfstar-39-sailmaster-3571393/",
+            "Name": "Gulfstar 39 Sailmaster",
+            "Price": "118,115",
+            "Size": "39 ft / 1981",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/95/38/7169538_20190806164239374_1_LARGE.jpg?f=/1/95/38/7169538_20190806164239374_1_LARGE.jpg&w=520&h=346&t=1565137504",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1983/freedom-express-cat-ketch-3181566/",
+            "Name": "Freedom Express Cat Ketch",
+            "Price": "81,986",
+            "Size": "39 ft / 1983",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/50/5/6595005_20180222161057987_1_LARGE.jpg?f=/1/50/5/6595005_20180222161057987_1_LARGE.jpg&w=520&h=346&t=1519344680",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/hans-christian-38-3549855/",
+            "Name": "Hans Christian 38",
+            "Price": "118,115",
+            "Size": "38 ft / 1978",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/38/59/7103859_20190605123522417_1_LARGE.jpg?f=/1/38/59/7103859_20190605123522417_1_LARGE.jpg&w=520&h=346&t=1560016574",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1983/catalina-38-3256502/",
+            "Name": "Catalina 38",
+            "Price": "34,601",
+            "Size": "38 ft / 1983",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/81/31/6858131_20180928133246780_1_LARGE.jpg?f=/1/81/31/6858131_20180928133246780_1_LARGE.jpg&w=520&h=346&t=1538174335",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/tayana-37-3569544/",
+            "Name": "Tayana 37",
+            "Price": "62,532",
+            "Size": "37 ft / 1978",
+            "Location": "Medford, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/26/22/7142622_20190731134615827_1_LARGE.jpg?f=/1/26/22/7142622_20190731134615827_1_LARGE.jpg&w=520&h=346&t=1564693634",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1989/hunter-legend-37-3639626/",
+            "Name": "Hunter Legend 37",
+            "Price": "69,341",
+            "Size": "37 ft / 1989",
+            "Location": "Newport, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/23/89/7322389_20200106092555682_1_LARGE.jpg?f=/1/23/89/7322389_20200106092555682_1_LARGE.jpg&w=520&h=346&t=1578331661",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1992/hunter-37-5-3549898/",
+            "Name": "Hunter 37.5",
+            "Price": "86,016",
+            "Size": "37 ft / 1992",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/67/34/7106734_20190607152034638_1_LARGE.jpg?f=/1/67/34/7106734_20190607152034638_1_LARGE.jpg&w=520&h=346&t=1560035304",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1983/catalina-36-3640032/",
+            "Name": "Catalina 36",
+            "Price": "83,374",
+            "Size": "36 ft / 1983",
+            "Location": "Scappoose, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/25/23/7322523_20200107111639590_1_LARGE.jpg?f=/1/25/23/7322523_20200107111639590_1_LARGE.jpg&w=520&h=346&t=1578426460",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/2001/bruce-roberts-spray-36-3183537/",
+            "Name": "Bruce Roberts Spray 36",
+            "Price": "77,122",
+            "Size": "36 ft / 2001",
+            "Location": "Willamette River, OR USA - Shown by Appointment, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/18/38/6631838_0_240220181658_1.jpg?f=/1/18/38/6631838_0_240220181658_1.jpg&w=520&h=346&t=1519861564",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1982/islander-36-3226675/",
+            "Name": "Islander 36",
+            "Price": "41,549",
+            "Size": "36 ft / 1982",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/82/59/6738259_20180705182237675_1_LARGE.jpg?f=/1/82/59/6738259_20180705182237675_1_LARGE.jpg&w=520&h=346&t=1530840301",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1972/fiskars-finnsailer-35-3598327/",
+            "Name": "Fiskars Finnsailer 35",
+            "Price": "48,634",
+            "Size": "36 ft / 1972",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/18/68/7251868_20191015174249311_1_LARGE.jpg?f=/1/18/68/7251868_20191015174249311_1_LARGE.jpg&w=520&h=346&t=1571186571",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1979/young-sun-cutter-3254018/",
+            "Name": "Young Sun Cutter",
+            "Price": "34,601",
+            "Size": "35 ft / 1979",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/64/13/6846413_20180917170526120_1_LARGE.jpg?f=/1/64/13/6846413_20180917170526120_1_LARGE.jpg&w=520&h=346&t=1537555632",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1984/schock-35-2999387/",
+            "Name": "Schock 35",
+            "Price": "41,686",
+            "Size": "35 ft / 1984",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/5/88/5910588_20160819115920487_1_LARGE.jpg?f=/1/5/88/5910588_20160819115920487_1_LARGE.jpg&w=520&h=346&t=1471633185",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1978/endurance-35-3548255/",
+            "Name": "Endurance 35",
+            "Price": "48,497",
+            "Size": "35 ft / 1978",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/5/17/7100517_20190604103925317_1_LARGE.jpg?f=/1/5/17/7100517_20190604103925317_1_LARGE.jpg&w=520&h=346&t=1559685684",
+            "Listing": "Yachtworld.com"
+        },
+        {
+            "URL": "https://www.yachtworld.com/boats/1985/custom-alsea-bay-34-3488780/",
+            "Name": "Custom Alsea Bay 34",
+            "Price": "56,834",
+            "Size": "34 ft / 1985",
+            "Location": "Portland, Oregon, United States",
+            "Thumb": "https://newimages.yachtworld.com/resize/1/4/20/6870420_20181127154937864_1_LARGE.jpg?f=/1/4/20/6870420_20181127154937864_1_LARGE.jpg&w=520&h=346&t=1543363192",
+            "Listing": "Yachtworld.com"
         }
     ]
 }

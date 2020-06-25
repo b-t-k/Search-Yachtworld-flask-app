@@ -1,4 +1,6 @@
 
 *.json
 *.pyc
+boatlist.json
+*.DS_Store
 output/boatlist.json
