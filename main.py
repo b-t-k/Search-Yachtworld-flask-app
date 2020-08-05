@@ -166,7 +166,12 @@ def echo():
 					#loop though listing and append to list
 					for listname in boatlist:
 						thumbimg = listname.find('img')
-						thumb=thumbimg['src']
+						if thumbimg is None:
+							thumb=""
+							print("no image")
+						else:
+							thumb=thumbimg['src']
+							print(thumb)
 
 						nameurllink=listname.find('a')
 						nameurl = nameurllink['href']
