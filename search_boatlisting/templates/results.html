@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Sailboat Search Results</title>
-	</head>
-
-<body>
 	{% extends "template.html" %}
 	{% set active_page = "results" %}
 	{% block content %}
@@ -12,7 +5,7 @@
 			<h2 class="orange">Sailboat Search Results</h2>
 			<div id="preface">
 				{% for pb in predata %}
-				<div>
+				<div class="col-md-10">
 					<p>{{pb.Text}}<strong>{{pb.Listing}}</strong><br/>Updated: {{pb.Date}}
 					<br/><a href="{{pb.Creator}}">created by {{pb.Creator}}</a></p>
 					<p>Price range : <strong>${{pb.Low}} </strong> and <strong>${{pb.High}}</strong> ({{pb.Currency}})<br/>
@@ -20,6 +13,9 @@
 					<p>Total Boats found: <strong>{{pb.Boatcount}}</strong></p>
 				</div>
 				{% endfor %}
+				<div class="col-md-2">
+					<a href="{{ url_for('download',filename='boatlist.xlsx') }}" download class="btn btn-default fixedsize box-shadow--4dp" >Download xlsx</a>
+				</div>
 		</div>
 	{% for boat in boatlist %}
 		<div class="col-xs-6" style="min-height:170px;">
@@ -36,6 +32,6 @@
 	{% endfor %}
 
 	{% endblock %}
-</body>
-</html>
+
+
 

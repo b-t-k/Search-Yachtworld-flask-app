@@ -1,36 +1,55 @@
-# coding: utf-8
-
-from flask import Flask, render_template, send_from_directory, request, jsonify
+from flask import request, jsonify, render_template, send_from_directory, flash, redirect, url_for
 import json
 import os
+# import app from __init__
+from search_boatlisting import app
+from search_boatlisting.forms import boatsearchform, loginform
+# from .loops import *
 
-app = Flask(__name__)
-
+#routes are where flask goes to look for files
 @app.route('/favicon.ico')
 def favicon():
 	return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 @app.route("/")
 def home():
-	return render_template("index.html")
+	form = boatsearchform()
+	return render_template("index.html", form = form)
+
+@app.route("/login", methods=['GET', 'POST'])
+def login():
+	form = loginform()
+	if form.validate_on_submit():
+		flash(f'Login Approved for {form.email.data}', 'success')
+		return redirect(url_for('home'))
+	return render_template('login.html', title='Log In', form = form)
 
 @app.route('/results')
 def results():
 	data = []
-	with open("output/boatlist.json", "r") as jdata:
+	with open("search_boatlisting/output/boatlist.json", "r") as jdata:
 		data = json.load(jdata)
-	return render_template("results.html", boatlist=data['boats'],predata=data['fileinfo'])
+	return render_template("results.html", boatlist=data['boats'],predata=data['fileinfo'], title='Sailboat Search Results')
 
 @app.route('/output/<path:filename>', methods=['GET'])
 def download(filename):
-	return send_from_directory(os.path.join(app.root_path, 'output'),filename=filename)
+	return send_from_directory(os.path.join(app.root_path, '/search_boatlisting/output'),filename=filename)
 
-@app.route("/", methods=['POST'])
+@app.route("/", methods=['GET', 'POST'])
 def echo():
 	#get index form data
+	form = boatsearchform()
+
 	if request.method == "POST":
-		sitename=request.form["sitename"]
+			
+		# !! sitename using wtforms
+		sitename=(form.sitename.data)
+		# !! siteneame using requests
+		#sitename=request.form["sitename"]
+		print('ECHO SITENAME: ')
+		print(sitename)
 		inputcurr=request.form["inputcurr"]
+		print(inputcurr)
 		minprice=request.form["minprice"]
 		maxprice=request.form["maxprice"]
 		minlength=request.form["minlength"]
@@ -166,7 +185,12 @@ def echo():
 					#loop though listing and append to list
 					for listname in boatlist:
 						thumbimg = listname.find('img')
-						thumb=thumbimg['src']
+						if thumbimg is None:
+							thumb=""
+							print("no image")
+						else:
+							thumb=thumbimg['src']
+							print(thumb)
 
 						nameurllink=listname.find('a')
 						nameurl = nameurllink['href']
@@ -238,7 +262,7 @@ def echo():
 
 
 		#Start yachtworld_loop()
-		def yachtword_loop(minprice, maxprice):
+		def yachtworld_loop(minprice, maxprice):
 			echo.boatcount = 0
 
 			# set base url &  list site
@@ -302,24 +326,25 @@ def echo():
 
 				# Loop through pages
 				while pagecount >= pagenum:
-		#					print (pagecount)
-		#					print (pagenum)
+						# print (pagecount)
+						# print (pagenum)
 
 					currpagehtml = urlpath+'&page=' + str(pagenum)
 					page = requests.get(currpagehtml, timeout=5)
 					boatpg = BeautifulSoup(page.content, "html.parser")
-#					print (currpagehtml)
+					# print (currpagehtml)
 
 					# find boat listings section
 					boatlist = boatpg.find('div', class_="search-right-col")
 
 					#find single boat listing
 					boatlisting = boatlist.find_all('a')
+					# print(boatlisting)
 
 					#loop though listing and append to list
 					for listname in boatlisting:
 
-						if listname['data-reporting-click-listing-type'] != "YW Premium":
+						if listname['data-reporting-click-listing-type'] != "premium placement":
 
 							nameurl = listname['href']
 							thumb = listname.find("meta",  property="image")
@@ -365,7 +390,7 @@ def echo():
 
 		# set path to export as file
 		dirname = os.path.dirname(__file__)
-		path_folder = os.path.join(dirname, "output/")
+		path_folder = os.path.join(dirname, "search_boatlisting/output/")
 		#print (path_folder)
 
 		# set date and time
@@ -380,10 +405,10 @@ def echo():
 		if sitename == "SBL":
 			sailboatlisting_loop(maxprice)
 		elif sitename == "YW":
-			yachtword_loop(minprice, maxprice)
+			yachtworld_loop(minprice, maxprice)
 		elif sitename == "both":
 			sailboatlisting_loop()
-			yachtword_loop(minprice, maxprice)
+			yachtworld_loop(minprice, maxprice)
 			echo.listsite = 'Yachtworld & Sailboatlisting'
 
 		#add Preface list (array)
@@ -407,7 +432,7 @@ def echo():
 		arraypreface.append(preface)
 
 		# open json file with path
-		with open(path_folder+'boatlist.json', 'w') as outfile:
+		with open('search_boatlisting/output/boatlist.json', 'w') as outfile:
 			#dump two lists with dict names and add formatting (default=str solves date issue)
 			json.dump({'fileinfo': arraypreface, 'boats': arrayjson}, outfile, indent=4, default=str)
 
@@ -419,13 +444,13 @@ def echo():
 	datax.json = json.dumps(arrayjson)
 
 	data_export = datax.export('xlsx')
-	with open('output/boatlist.xlsx', 'wb') as f:  # open the xlsx file
+	with open('search_boatlisting/output/boatlist.xlsx', 'wb') as f:  # open the xlsx file
 		f.write(data_export)  # write the dataset to the xlsx file
 	f.close()
 
 
 	data = []
-	with open(path_folder+"boatlist.json", "r") as jdata:
+	with open("search_boatlisting/output/boatlist.json", "r") as jdata:
 		data = json.load(jdata)
 		data['boats'].sort(key=keyparam)
 	return render_template('results.html', boatlist=data['boats'],predata=data['fileinfo'])

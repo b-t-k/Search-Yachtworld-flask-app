@@ -2,8 +2,12 @@
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">
-	<title>Flask Parent Template</title>
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	{% if title %}
+		<title>{{ title }}</title>
+	{% else %}
+		<title>Sailboat Search </title>
+	{% endif %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js">
@@ -14,20 +18,30 @@
 		<div class="container-fluid ">
 			<div class="page-header clearfix">
 				<div >
-					<img src="static\images\artboard.png" width="275">
+					<a href="https://neverforever.ca"><img src="static\images\artboard.png" width="275"></a>
 				</div>
 				<div class="globalmenubar">
 					<a href="{{ url_for('results') }}" {% if active_page == "results"  %} class="btn btn-orange active fixedsize pull-right"{% endif %} class="btn btn-orange fixedsize pull-right box-shadow--4dp" >Results</a>
 					<a href="{{ url_for('home') }}" {% if active_page == "index" %} class="btn btn-orange active fixedsize pull-right"{% endif %} class="btn btn-orange fixedsize pull-right box-shadow--4dp" >Search</a>
 				</div>
 			</div>
+			<!-- Display message on successful login -->
+			{% with messages = get_flashed_messages(with_categories=true) %}
+				{% if messages %}
+					{% for category, message in messages %}
+					<div class="alert alert-{{ category }}">
+						{{ message }}
+					</div>
+					{% endfor %}
+				{% endif %}
+			{% endwith %}
 
 			{% block content %}
+			<!-- insert content from sub-templates -->
 			{% endblock %}
-
 		</div>
-		<div class="pagefooter col-md-12">
-			<p>Version 0.5.6 (alpha)-2020</p>
+		<div class="pagefooter col-md-12 text-muted">
+			<p>Version 0.6.0 (alpha)-2021</p>
 		</div>
 	</div>
 </body>
