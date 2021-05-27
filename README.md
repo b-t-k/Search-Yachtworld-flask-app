@@ -14,7 +14,7 @@ The results are displayed with links back to the originating site and also outpu
 Download and run: $ FLASK_APP=/Search-boatlisting-flask-app/yacht_app flask run  --port 5000 --host=0.0.0.0
 The app will run in the background (on OSX, you will need to keep the terminal window open as long as you are running the app. Type Ctrl-c to quit). Results can be found at [http://localhost:5000](http://localhost:5000).
 #### Dependencies
-Obviously python and flask must be installed on your computer for this to run. You will also need to install the BeautifulSoup4 and Requests packages.
+Obviously python and flask must be installed on your computer for this to run. You will also need to install the BeautifulSoup4, Requests, Jsonify, and Tablib[xlsx] packages.
 #### WARNING
 [Flask warns](https://flask.palletsprojects.com/en/1.1.x/deploying/#deployment) that "While lightweight and easy to use, Flask’s built-in server is not suitable for production as it doesn’t scale well." I imagine there might be security concerns as well. But for local use it works just fine.
 

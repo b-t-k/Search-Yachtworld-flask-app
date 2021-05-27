@@ -22,7 +22,7 @@
 				</div>
 				<div class="globalmenubar">
 					<a href="{{ url_for('results') }}" {% if active_page == "results"  %} class="btn btn-orange active fixedsize pull-right"{% endif %} class="btn btn-orange fixedsize pull-right box-shadow--4dp" >Results</a>
-					<a href="{{ url_for('home') }}" {% if active_page == "index" %} class="btn btn-orange active fixedsize pull-right"{% endif %} class="btn btn-orange fixedsize pull-right box-shadow--4dp" >Search</a>
+					<a href="{{ url_for('home') }}" {% if active_page == "index" %} class="btn btn-orange active fixedsize pull-right"{% endif %} class="btn btn-orange fixedsize pull-right box-shadow--4dp" >Search Page</a>
 				</div>
 			</div>
 			<!-- Display message on successful login -->
@@ -40,8 +40,8 @@
 			<!-- insert content from sub-templates -->
 			{% endblock %}
 		</div>
-		<div class="pagefooter col-md-12 text-muted">
-			<p>Version 0.6.0 (alpha)-2021</p>
+		<div class="pagefooter col-md-12">
+			<p>Version 0.6.0 (alpha)-2020</p>
 		</div>
 	</div>
 </body>
