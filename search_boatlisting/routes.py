@@ -5,25 +5,13 @@ import os
 from search_boatlisting import app
 from search_boatlisting.forms import boatsearchform, loginform
 from .loops import *
-from classes import *
+from .classes import *
 
 #routes are where flask goes to look for files
-@app.route('/favicon.ico')
-def favicon():
-	return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
-
 @app.route("/")
 def home():
 	form = boatsearchform()
 	return render_template("index.html", form = form)
-
-@app.route("/login", methods=['GET', 'POST'])
-def login():
-	form = loginform()
-	if form.validate_on_submit():
-		flash(f'Login Approved for {form.email.data}', 'success')
-		return redirect(url_for('home'))
-	return render_template('login.html', title='Log In', form = form)
 
 @app.route('/results')
 def results():
@@ -34,8 +22,13 @@ def results():
 
 @app.route('/output/<path:filename>', methods=['GET'])
 def download(filename):
-	return send_from_directory(os.path.join(app.root_path, '/search_boatlisting/output'),filename=filename)
+	return send_from_directory(os.path.join(app.root_path, 'output'), filename)
 
+@app.route('/favicon.ico')
+def favicon():
+	return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+# Main Search routine using home page
 @app.route("/", methods=['GET', 'POST'])
 def echo():
 	#get index form data
@@ -64,6 +57,7 @@ def echo():
 		elif sortparam == 'Size':
 			keyparam = lambda s: s['Size']
 
+	## SET DEFAULTS
 		# input low length
 		if minlength == '':
 			minlength = '34'
@@ -96,10 +90,8 @@ def echo():
 			'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
 		}
 
-		# Example of using a class
+		# set class object with form input
 		searchparameters = boatsearchinput(sitename, inputcurr, minprice, maxprice, minlength, maxlength, sortparam)
-		print ('LOOK AT ME ' +  searchparameters.maxprice)
-		
 		
 		# import various libraries
 		import csv
@@ -111,8 +103,7 @@ def echo():
 		# # import math
 		# # from datetime import datetime
 
-#Start Process
-
+	# Start Process
 		# set path to export as file
 		dirname = os.path.dirname(__file__)
 		path_folder = os.path.join(dirname, "search_boatlisting/output/")
@@ -126,18 +117,19 @@ def echo():
 		arrayjson = []
 		urljson =[]
 
-#CALL THE TWO FUNCTIONS!!!!!
+	#CALL THE TWO FUNCTIONS!!!!!
 		if sitename == "SBL":
 			# return two variables from function
 			listsite, boatcount = sailboatlisting_loop(searchparameters,urljson,arrayjson)
 		elif sitename == "YW":
 			listsite, boatcount = yachtworld_loop(searchparameters,urljson,arrayjson)
 		elif sitename == "both":
-			sailboatlisting_loop(searchparameters,urljson,arrayjson)
-			yachtworld_loop(searchparameters,urljson,arrayjson)
+			listsite, boatcountSBL = sailboatlisting_loop(searchparameters,urljson,arrayjson)
+			listsite, boatcountYW = yachtworld_loop(searchparameters,urljson,arrayjson)
 			listsite = 'Yachtworld & Sailboatlisting'
+			boatcount = boatcountSBL + boatcountYW
 
-		#add Preface list (array)
+	# Add Preface list (array)
 		arraypreface = []
 
 		preface = {
@@ -161,7 +153,7 @@ def echo():
 			#dump two lists with dict names and add formatting (default=str solves date issue)
 			json.dump({'fileinfo': arraypreface, 'boats': arrayjson}, outfile, indent=4, default=str)
 
-#write to excel
+	# write to excel
 	import tablib
 
 	datax = tablib.Dataset()
