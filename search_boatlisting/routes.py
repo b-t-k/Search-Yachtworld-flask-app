@@ -7,11 +7,17 @@ from search_boatlisting.forms import boatsearchform, loginform
 from .loops import *
 from .classes import *
 
+#set defaults for search
+minprice_d='50000'
+maxprice_d='100000'
+minlength_d='34'
+maxlength_d='48'
+
 #routes are where flask goes to look for files
 @app.route("/")
-def home():
+def home():	
 	form = boatsearchform()
-	return render_template("index.html", form = form)
+	return render_template("index.html", form = form, minprice = minprice_d, maxprice=maxprice_d,minlength=minlength_d,maxlength=maxlength_d)
 
 @app.route('/results')
 def results():
@@ -60,13 +66,13 @@ def echo():
 	## SET DEFAULTS
 		# input low length
 		if minlength == '':
-			minlength = '34'
+			minlength = minlength_d
 		else:
 			minlength = minlength
 
 		# input high length
 		if maxlength == '':
-			maxlength = '48'
+			maxlength = maxlength_d
 		else:
 			maxlength = maxlength
 		#print(maxlength)
@@ -74,14 +80,14 @@ def echo():
 
 		#set low price
 		if minprice == '':
-			minprice = '30000'
+			minprice = minprice_d
 		else:
 			minprice = minprice
 		#print(echo.minpricenum)
 
 		#set high price
 		if maxprice == '':
-			maxprice = '120000'
+			maxprice = maxprice_d
 		else:
 			maxprice = maxprice
 
