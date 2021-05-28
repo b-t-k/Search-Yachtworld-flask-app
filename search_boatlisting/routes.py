@@ -4,8 +4,8 @@ import os
 # import app from __init__
 from search_boatlisting import app
 from search_boatlisting.forms import boatsearchform, loginform
-from .loops import *
-from .classes import *
+from search_boatlisting.loops import *
+from search_boatlisting.classes import *
 
 #set defaults for search
 minprice_d='50000'
