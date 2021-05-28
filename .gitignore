@@ -4,3 +4,4 @@
 boatlist.json
 *.DS_Store
 output/boatlist.json
+search_boatlisting/output/boatlist.xlsx

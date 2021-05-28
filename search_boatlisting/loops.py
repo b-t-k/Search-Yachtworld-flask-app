@@ -10,16 +10,11 @@ from .currencyexchange import cad_conversion, usd_conversion
 # import json
 # import os
 
-print(cad_conversion(125000))
-
-print(usd_conversion(150000))
-
 #start sailboatlisting_loop
 def sailboatlisting_loop(searchparameters,urljson,arrayjson):
 
+    # set variables
     boatcount = 0
-
-    # set base url &  list site
     baseurl='https://www.sailboatlistings.com/cgi-bin/saildata/db.cgi?db=default&uid=default&websearch=1&view_records=1&sb=date&so=descend'
     listsite = 'Sailboatlisting.com'
 
@@ -167,9 +162,9 @@ def sailboatlisting_loop(searchparameters,urljson,arrayjson):
 
 #Start yachtworld_loop()
 def yachtworld_loop(searchparameters,urljson,arrayjson):
-    boatcount = 0
 
-    # set base url &  list site
+    # set variables
+    boatcount = 0
     baseurl='https://www.yachtworld.com/boats-for-sale/type-sail/region-northamerica/'
     listsite= 'Yachtworld.com'
 
@@ -275,4 +270,4 @@ def yachtworld_loop(searchparameters,urljson,arrayjson):
 
     return listsite, boatcount
 
-		# End yachtworld_loop()
+# End yachtworld_loop()
