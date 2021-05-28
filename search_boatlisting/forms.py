@@ -10,7 +10,7 @@ from wtforms import widgets
  # writes python classes that automatically transformed to html forms
 
 class boatsearchform(FlaskForm):
-    sitename = RadioField('Site', choices=[('YW','Yachtworld'), ('SBL', 'SailboatListings'),('both','Both')], widget=widgets.TableWidget(with_table_tag=True))
+    sitename = RadioField('Site', choices=[('YW','Yachtworld'), ('SBL', 'SailboatListings'),('both','Both')], widget=widgets.TableWidget(with_table_tag=True), default='YW')
     inputcurr = StringField('inputcurr')
     minprice = StringField('minprice')
     maxprice = StringField('maxprice')

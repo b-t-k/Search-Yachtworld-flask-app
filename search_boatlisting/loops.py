@@ -1,5 +1,21 @@
+
+import requests
+from bs4 import BeautifulSoup
+import re
+import math
+from datetime import datetime
+from .currencyexchange import cad_conversion, usd_conversion
+
+# import csv
+# import json
+# import os
+
+print(cad_conversion(125000))
+
+print(usd_conversion(150000))
+
 #start sailboatlisting_loop
-def sailboatlisting_loop(maxprice):
+def sailboatlisting_loop(searchparameters,urljson,arrayjson):
 
     boatcount = 0
 
@@ -7,22 +23,14 @@ def sailboatlisting_loop(maxprice):
     baseurl='https://www.sailboatlistings.com/cgi-bin/saildata/db.cgi?db=default&uid=default&websearch=1&view_records=1&sb=date&so=descend'
     listsite = 'Sailboatlisting.com'
 
-    #set low number
-    minpricenum ='0'
+    # Do exchange rate
+    if searchparameters.inputcurr == "CAD":
+        maxprice = int(searchparameters.maxprice)
+        maxprice = cad_conversion(maxprice)
+        maxprice = str(math.trunc(maxprice))
 
-    #set high price
-    if maxprice == '':
-        maxpricenum = '120000'
-        maxprice = maxpricenum
-    else:
-        maxpricenum = maxprice
-
-    if curr == "CAD":
-        maxpricenum = int(maxpricenum) / exchange
-        maxpricenum = str(math.trunc(maxpricenum))
-
-    pricerange = '&price-lt=' + maxpricenum
-    boatlength = '&length-gt=' + lowlen + '&length-lt=' + highlen
+    pricerange = '&price-lt=' + maxprice
+    boatlength = '&length-gt=' + searchparameters.minlength + '&length-lt=' + searchparameters.maxlength
 
     # create list of url variables
     bc = '&city=bc'
@@ -82,10 +90,10 @@ def sailboatlisting_loop(maxprice):
                 thumbimg = listname.find('img')
                 if thumbimg is None:
                     thumb=""
-                    print("no image")
+                    # print("no image")
                 else:
                     thumb=thumbimg['src']
-                    print(thumb)
+                    # print(thumb)
 
                 nameurllink=listname.find('a')
                 nameurl = nameurllink['href']
@@ -127,9 +135,9 @@ def sailboatlisting_loop(maxprice):
 
                 #remove $ and comma
                 price = int(priceraw.strip('$').replace(",", ""))
-                if curr == 'CAD':
+                if searchparameters.inputcurr == 'CAD':
                     #convert to CAD
-                    price = math.trunc(int(price) * exchange)
+                    price = math.trunc(int(usd_conversion(price)))
                 cost = str(price)
                 sizeyear = size + " / " + year
 
@@ -153,32 +161,20 @@ def sailboatlisting_loop(maxprice):
             #increment pagenumber
             pagenum = pagenum + 1
 
-		#end sailboatlisting_loop
+    return listsite, boatcount
+
+#end sailboatlisting_loop
 
 #Start yachtworld_loop()
-def yachtworld_loop(minprice, maxprice):
-    echo.boatcount = 0
+def yachtworld_loop(searchparameters,urljson,arrayjson):
+    boatcount = 0
 
     # set base url &  list site
     baseurl='https://www.yachtworld.com/boats-for-sale/type-sail/region-northamerica/'
-    echo.listsite= 'Yachtworld.com'
+    listsite= 'Yachtworld.com'
 
-    #set low price
-    if minprice == '':
-        echo.minpricenum = '30000'
-    else:
-        echo.minpricenum = minprice
-    #print(echo.minpricenum)
-
-    #set high price
-    if maxprice == '':
-        echo.maxpricenum = '120000'
-        maxprice = echo.maxpricenum
-    else:
-        echo.maxpricenum = maxprice
-
-    pricerange = '&price=' + echo.minpricenum + '-' + echo.maxpricenum
-    currlen = '?currency=' + curr + '&length=' + lowlen + '-' + highlen
+    pricerange = '&price=' + searchparameters.minprice + '-' + searchparameters.maxprice
+    currlen = '?currency=' + searchparameters.inputcurr + '&length=' + searchparameters.minlength + '-' + searchparameters.maxlength
 
     # set regions
     wash = 'country-united-states/state-washington/'
@@ -265,11 +261,11 @@ def yachtworld_loop(minprice, maxprice):
                             "Location":location,
                             "URL": nameurl,
                             "Thumb": thumburl,
-                            "Listing": echo.listsite,
+                            "Listing": listsite,
                         "Listdate": ''
                         }
                     #increment boat count
-                    echo.boatcount = echo.boatcount + 1
+                    boatcount = boatcount + 1
 
                     # append to list
                     arrayjson.append(writejson)
@@ -277,4 +273,6 @@ def yachtworld_loop(minprice, maxprice):
             #increment pagenumber
             pagenum = pagenum + 1
 
-# End yachtworld_loop()
+    return listsite, boatcount
+
+		# End yachtworld_loop()
