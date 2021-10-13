@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+
+  flask:
+    build: ./flask_boatlisting
+    container_name: flask_boatlisting
+    restart: always
+    environment:
+      - APP_NAME=Search_Boatlistings
+    expose:
+      - 8889
+
+  # nginx:
+  #   build: ./nginx
+  #   container_name: nginx
+  #   restart: always
+  #   ports:
+  #     - "8888:80"
