@@ -11,6 +11,12 @@ Currently this app searches Yachtworld for BC, Washington and Oregon. Since the 
 The results are displayed with links back to the originating site and also output to /output/boatlist.json and that file can be saved for other uses by copying it out of the folder.
 There is also the choice to download the data in .xlsx format on the results screen.
 
+# The rest of this is mostly out of date
+## Current abbreviated instructions
+The current version is set up to be run in a Docker container. Go to the folder with the docker-compose-yml file and run `docker-compose build`. Then you can mount teh app using Docker or Portainer.
+
+## Old
+
 ## Deployment
 ~~Download and run: $ FLASK_APP=/Search-boatlisting-flask-app/yacht_app flask run  --port 5000 --host=0.0.0.0~~
 The code is still in debug mode so you can download and  run `python3 run.py`
